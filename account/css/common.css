@@ -37,7 +37,7 @@ a:hover {color:#25a68d;text-decoration:underline}
 
 #wrap {width:100%;min-width:900px;max-width:1920px;overflow:hidden;margin:0 auto;background:url("../images/bg.jpg") no-repeat center 0;}
 
-#main {width:900px;margin:0 auto;}
+#main {margin:0 auto;}
 
 #header {position:relative;height:110px;padding-top:40px;}
 #header h1 {display:block;width:315px;height:67px;overflow: hidden;background: url("../images/header_bg.png") no-repeat;text-indent:-9999px;}
