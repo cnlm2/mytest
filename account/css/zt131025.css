@@ -1,0 +1,192 @@
+body {
+	margin:0px;
+	font-size:12px;
+	font-family:Tahoma;
+	padding:0px;
+	background-image: url(/images/main/zhuanti1beijing.jpg);
+	background-position: 50% 0px;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width:1036px;margin:auto;
+	position: relative;
+	background: url(/images/main/zhuanti2beijing.jpg); background-position: 50% 0%; background-repeat: no-repeat;
+}
+
+a:link {
+	color: #e6fe3f;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+}
+a:visited {
+	font-size: 12px;
+	text-decoration: none;
+	color: rgb(0, 20, 255);
+}
+a:hover {
+	font-size: 12px;
+	text-decoration: underline;
+	color: rgb(0, 20, 255);
+}
+a:active {
+	font-size: 12px;
+	text-decoration: none;
+	color: rgb(255, 20, 0);
+	text-align: center;
+}
+
+.linkrighttop {
+    display: block;
+	width: 200px;
+	height: 24px;
+	position: absolute;
+}
+
+.linktxt {
+    display: block;
+	width: 190px;
+	height: 70px;
+	position: absolute;
+}
+
+.linktxt a {
+    display: block;
+	width: 190px;
+	height: 70px;
+	text-indent: -9999px;
+}
+
+.linktxt1 {
+    display: block;
+	width: 190px;
+	height: 70px;
+	position: absolute;
+}
+.linktxt1 a {
+    display: block;
+	width: 190px;
+	height: 70px;
+	text-indent: -9999px;
+}
+
+.linktxt2 {
+    display: block;
+	width: 190px;
+	height: 70px;
+	position: absolute;
+}
+.linktxt2 a {
+    display: block;
+	width: 190px;
+	height: 70px;
+	text-indent: -9999px;
+}
+
+.linktxt3 {
+    display: block;
+	width: 190px;
+	height: 70px;
+	position: absolute;
+}
+.linktxt3 a {
+    display: block;
+	width: 190px;
+	height: 70px;
+	text-indent: -9999px;
+}
+.linktxt4 {
+    display: block;
+	width: 190px;
+	height: 70px;
+	position: absolute;
+}
+.linktxt4 a {
+    display: block;
+	width: 190px;
+	height: 70px;
+	text-indent: -9999px;
+}
+
+.linkhome {
+	display: block;
+	width: 130px;
+	height: 44px;
+	position: absolute;
+}
+.linkhome a{
+	display: block;
+	width: 130px;
+	height: 45px;
+	text-indent: -9999px;
+}
+
+.linkcj {
+	display: block;
+	width: 130px;
+	height: 44px;
+	position: absolute;
+}
+.linkcj a{
+	display: block;
+	width: 130px;
+	height: 45px;
+	text-indent: -9999px;
+}
+
+#header {
+	height: 500px;
+}
+
+.zj {
+	position: relative;
+	width: 911px;
+	height: 1032px;
+	margin: auto;
+	background: url(/images/main/zhuanti1025zhuoji.jpg); background-position: 50% 0%; background-repeat: no-repeat;
+}
+
+.zj #panda {
+	position: absolute;
+	left: 67px; top: 111px;
+	width: 320px; height: 320px;
+	background: url(/images/main/zhuanti1025panda.gif);;
+}
+.zj #tiger {
+	position: absolute;
+	left: 528px; top: 111px;
+	width: 320px; height: 320px;
+	background: url(/images/main/zhuanti1025tiger.gif);;
+}
+.zj #deer {
+	position: absolute;
+	left: 67px; top: 560px;
+	width: 320px; height: 320px;
+	background: url(/images/main/zhuanti1025deer.gif);;
+}
+.zj #horse {
+	position: absolute;
+	left: 528px; top: 560px;
+	width: 320px; height: 320px;
+	background: url(/images/main/zhuanti1025horse.gif);;
+}
+
+.zj .button {
+	position: absolute;
+	width: 173px; height: 54px;
+}
+.zj .button a {
+	position: absolute;
+	text-indent: -9999px;
+	width: 173px; height: 54px;
+}
+
+.zj #info {
+	position: absolute;
+	top: -30px;
+	color: yellow;
+	font-size: 18px;
+	font-weight: bold;
+}
+
