@@ -440,64 +440,6 @@ class AccountController extends Controller
 	}
 
 
-
-	public function actionResetFromyy($id)
-	{
-		$reset = Reset::model()->findByPk($id);
-		if (!$reset) {
-			throw new CHttpException(404, "无效的重置链接");
-		}
-		if ((time()-strtotime($reset->time))>3600*24) {
-			$reset->delete();
-			throw new CHttpException(404, "无效的重置链接");
-		}
-		
-		$model=$this->loadModel($reset->account_id);
-		$model->scenario = "reset";
-
-		// Uncomment the following line if AJAX validation is needed
-		//$this->performAjaxValidation($model);
-
-		if(isset($_POST['Account']))
-		{
-			$model->originpassword = $_POST['Account']['password'];
-
-			$salt = $model->generateSalt();
-			$_POST['Account']['password'] =
-				$model::crypt(md5($_POST['Account']['password']), $salt);
-			$_POST['Account']['confirm'] =
-				$model::crypt(md5($_POST['Account']['confirm']), $salt);
-			$model->attributes=$_POST['Account'];
-
-			if($model->save()) {
-				Yii::import('application.vendors.*');
-				require_once('ucenter.php');
-				uc_user_edit($model->account, "", $model->originpassword, "", 1);
-				$reset->delete();
-				$accrw = Accrw::model()->findBySql('SELECT * FROM `accrw` WHERE account_id=? AND action="绑定莲蓬账号"',array($model->id));
-				if (!$accrw) {
-					$accrw = new Accrw();
-					$accrw->account_id = $model->id;
-					$accrw->reward_id = 90061;
-					$accrw->rw_type = 1;
-					$accrw->action = "绑定莲蓬账号";
-					$accrw->expire = "2017-01-01 00:00:00";
-					$accrw->save();
-				}
-				//Yii::app()->user->setState('info', "你已经成功重置密码，请牢记您的新用户名：".$model->account);
-				//$this->redirect(array('site/login'));
-				$this->render('resetfromyy', array('model'=>$model));
-				return;
-			}
-		}
-		$model->password="";
-		$model->confirm="";
-		$this->render('reset',array(
-			'model'=>$model,
-			'id'=>$reset->key,
-		));
-	}
-
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
