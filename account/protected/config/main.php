@@ -63,33 +63,14 @@ return array(
 		),
 		 */
 		'db'=>array(
-			'connectionString' => 'mysql:host=10.0.1.3;dbname=account',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=account',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
 			'schemaCachingDuration'=>3600,
 		),
-
-		'db_mobile_maint'=>array(
-			'class'=> 'CDbConnection',
-			'connectionString' => 'mysql:host=10.0.1.3;dbname=maint',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-			'schemaCachingDuration'=>3600,
-		),
-
-		'db_slave'=>array(
-			'class'=> 'CDbConnection',
-			'connectionString' => 'mysql:host=10.0.1.4;dbname=account',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-			'schemaCachingDuration'=>3600,
-		),
+		
 		'cache'=>array(
 			'class' => 'CFileCache',
 		 ),
