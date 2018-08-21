@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
 		<?php echo CHtml::submitButton('登录', array(
 				"onclick"=>"return doSubmit();"
 		)); ?>
-		&nbsp;<b><?php echo CHtml::link("立即注册", array('account/create'));?></b>
+		&nbsp;<b><?php echo CHtml::link("立即注册", array('account/quickreg'));?></b>
 	</div>
 
 <?php $this->endWidget(); ?>

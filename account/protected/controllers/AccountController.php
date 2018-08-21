@@ -273,7 +273,7 @@ class AccountController extends Controller
 				}
 			}
 			if($model->save()) {
-				uc_user_register($origin_account, $model->originpassword, $origin_email);
+				//uc_user_register($origin_account, $model->originpassword, $origin_email);
 				//if ($model->verified==0 && $this->sendVerifyMail($model)) {
 				//	Yii::app()->user->setState('info', "恭喜！你已经成功注册，现在可以登录了。同时验证邮件已发送至安全邮箱，请尽快登录邮箱验证。");
 				//} else {
@@ -287,7 +287,7 @@ class AccountController extends Controller
 				$identity->authenticate();
 				Yii::app()->user->login($identity, 0);
 				//发官方媒体礼包
-				$card_id = $this->genCardId("8UP");
+				//$card_id = $this->genCardId("8UP");
 				//
 				//广告用户直接激活
 				//if ($model->from){
@@ -297,7 +297,7 @@ class AccountController extends Controller
 				//	$activation->key = $model->from;
 				//	$activation->save();
 				//}
-				$this->renderPartial('quickregok', array('url'=>'site/login','model'=>$model,'card'=>$card_id), false, true);
+				//$this->renderPartial('quickregok', array('url'=>'site/login','model'=>$model,'card'=>$card_id), false, true);
 				return true;
 			}
 			$model->password="";
