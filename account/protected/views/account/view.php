@@ -34,16 +34,6 @@ $this->widget('zii.widgets.CDetailView', array(
 		'account',
 		//'password',
 		'email',
-		array(
-			'label'=>$model->getAttributeLabel('idcard'),
-			'type'=>'shadow',
-			'value'=>$model->idcard,
-		),
-		array(
-			'label'=>$model->getAttributeLabel('name'),
-			'type'=>'shadow',
-			'value'=>$model->name,
-		),
 		'balance',
 		'time',
 	),
