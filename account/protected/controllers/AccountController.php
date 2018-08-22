@@ -214,7 +214,7 @@ class AccountController extends Controller
 
 			if($model->save()) {
 				//$this->redirect(array('view','id'=>$model->id));
-				//uc_user_register($origin_account, $model->originpassword, $origin_email);
+				uc_user_register($origin_account, $model->originpassword, $origin_email);
 				//if (isset($_GET['from'])) {   // 来源跟踪
 				//	$activation = new Activation();
 				//	$activation->account_id = $model->id;
@@ -273,7 +273,7 @@ class AccountController extends Controller
 				}
 			}
 			if($model->save()) {
-				//uc_user_register($origin_account, $model->originpassword, $origin_email);
+				uc_user_register($origin_account, $model->originpassword, $origin_email);
 				//if ($model->verified==0 && $this->sendVerifyMail($model)) {
 				//	Yii::app()->user->setState('info', "恭喜！你已经成功注册，现在可以登录了。同时验证邮件已发送至安全邮箱，请尽快登录邮箱验证。");
 				//} else {
@@ -287,7 +287,7 @@ class AccountController extends Controller
 				$identity->authenticate();
 				Yii::app()->user->login($identity, 0);
 				//发官方媒体礼包
-				//$card_id = $this->genCardId("8UP");
+				$card_id = $this->genCardId("8UP");
 				//
 				//广告用户直接激活
 				//if ($model->from){
@@ -297,7 +297,7 @@ class AccountController extends Controller
 				//	$activation->key = $model->from;
 				//	$activation->save();
 				//}
-				//$this->renderPartial('quickregok', array('url'=>'site/login','model'=>$model,'card'=>$card_id), false, true);
+				$this->renderPartial('quickregok', array('url'=>'site/login','model'=>$model,'card'=>$card_id), false, true);
 				return true;
 			}
 			$model->password="";
@@ -376,22 +376,22 @@ class AccountController extends Controller
 			$model->attributes=$_POST['Account'];
 
 			if($model->save()) {
-				//Yii::import('application.vendors.*');
-				//require_once('ucenter.php');
-				//$uc_user = uc_get_user($model->account);
-				//if ($uc_user) {
-				//	uc_user_edit($model->account, "", $model->originpassword, "", 1);
+				Yii::import('application.vendors.*');
+				require_once('ucenter.php');
+				$uc_user = uc_get_user($model->account);
+				if ($uc_user) {
+					uc_user_edit($model->account, "", $model->originpassword, "", 1);
 				//} else {
 				//	uc_user_register($model->account, $model->originpassword, $model->email);
 				}
 				$this->redirect(array('view','id'=>$model->id));
 			}
 		}
-		//$model->password="";
-		//$model->confirm="";
-		//$this->render('password',array(
-		//	'model'=>$model,
-		//));
+		$model->password="";
+		$model->confirm="";
+		$this->render('password',array(
+			'model'=>$model,
+		));
 	}
 
 	public function actionReset($id)
@@ -423,10 +423,10 @@ class AccountController extends Controller
 			$model->attributes=$_POST['Account'];
 
 			if($model->save()) {
-			//	Yii::import('application.vendors.*');
-			//	require_once('ucenter.php');
-			//	uc_user_edit($model->account, "", $model->originpassword, "", 1);
-			//	$reset->delete();
+				Yii::import('application.vendors.*');
+				require_once('ucenter.php');
+				uc_user_edit($model->account, "", $model->originpassword, "", 1);
+				$reset->delete();
 				Yii::app()->user->setState('info', "你已经成功重置密码，现可以使用新密码登录了：");
 				$this->redirect(array('site/login'));
 			}
@@ -439,6 +439,64 @@ class AccountController extends Controller
 		));
 	}
 
+
+
+	public function actionResetFromyy($id)
+	{
+		$reset = Reset::model()->findByPk($id);
+		if (!$reset) {
+			throw new CHttpException(404, "无效的重置链接");
+		}
+		if ((time()-strtotime($reset->time))>3600*24) {
+			$reset->delete();
+			throw new CHttpException(404, "无效的重置链接");
+		}
+		
+		$model=$this->loadModel($reset->account_id);
+		$model->scenario = "reset";
+
+		// Uncomment the following line if AJAX validation is needed
+		//$this->performAjaxValidation($model);
+
+		if(isset($_POST['Account']))
+		{
+			$model->originpassword = $_POST['Account']['password'];
+
+			$salt = $model->generateSalt();
+			$_POST['Account']['password'] =
+				$model::crypt(md5($_POST['Account']['password']), $salt);
+			$_POST['Account']['confirm'] =
+				$model::crypt(md5($_POST['Account']['confirm']), $salt);
+			$model->attributes=$_POST['Account'];
+
+			if($model->save()) {
+				Yii::import('application.vendors.*');
+				require_once('ucenter.php');
+				uc_user_edit($model->account, "", $model->originpassword, "", 1);
+				$reset->delete();
+				$accrw = Accrw::model()->findBySql('SELECT * FROM `accrw` WHERE account_id=? AND action="绑定莲蓬账号"',array($model->id));
+				if (!$accrw) {
+					$accrw = new Accrw();
+					$accrw->account_id = $model->id;
+					$accrw->reward_id = 90061;
+					$accrw->rw_type = 1;
+					$accrw->action = "绑定莲蓬账号";
+					$accrw->expire = "2017-01-01 00:00:00";
+					$accrw->save();
+				}
+				//Yii::app()->user->setState('info', "你已经成功重置密码，请牢记您的新用户名：".$model->account);
+				//$this->redirect(array('site/login'));
+				$this->render('resetfromyy', array('model'=>$model));
+				return;
+			}
+		}
+		$model->password="";
+		$model->confirm="";
+		$this->render('reset',array(
+			'model'=>$model,
+			'id'=>$reset->key,
+		));
+	}
 
 	/**
 	 * Updates a particular model.
@@ -611,9 +669,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "拍拍富邮箱验证";
+		$mailer->Subject = "盖世豪侠邮箱验证";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -658,9 +716,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "拍拍富口令清除";
+		$mailer->Subject = "盖世豪侠口令清除";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1501,7 +1559,7 @@ class AccountController extends Controller
 				#$model = $this->loadModel($account_id);
 				$model = Account::model()->find('yy=?',array($resultArray['uid']));
 				if (!$model) {
-					$this->render('bindyyfail', array('model'=>null,'msg'=>'您的账号没有在拍拍富中创建过任何角色'));
+					$this->render('bindyyfail', array('model'=>null,'msg'=>'您的账号没有在盖世豪侠中创建过任何角色'));
 					return;	
 				}
 				//if ($model->password != "") {
@@ -1561,9 +1619,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "拍拍富解绑YY账号";
+		$mailer->Subject = "盖世豪侠解绑YY账号";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1660,9 +1718,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "拍拍富邮箱验证";
+		$mailer->Subject = "盖世豪侠邮箱验证";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1784,9 +1842,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "拍拍富口令清除";
+		$mailer->Subject = "盖世豪侠口令清除";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
