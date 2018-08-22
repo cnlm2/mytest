@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>拍拍富</title>
+    <title>拍拍富-拍拍贷投标专家</title>
     <meta name="description" content="拍拍富" />
 
 	<?php
