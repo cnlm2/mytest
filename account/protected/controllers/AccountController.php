@@ -214,7 +214,7 @@ class AccountController extends Controller
 
 			if($model->save()) {
 				//$this->redirect(array('view','id'=>$model->id));
-				uc_user_register($origin_account, $model->originpassword, $origin_email);
+				//uc_user_register($origin_account, $model->originpassword, $origin_email);
 				//if (isset($_GET['from'])) {   // 来源跟踪
 				//	$activation = new Activation();
 				//	$activation->account_id = $model->id;
@@ -611,9 +611,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "盖世豪侠邮箱验证";
+		$mailer->Subject = "拍拍投邮箱验证";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -658,9 +658,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "盖世豪侠口令清除";
+		$mailer->Subject = "拍拍投口令清除";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1501,7 +1501,7 @@ class AccountController extends Controller
 				#$model = $this->loadModel($account_id);
 				$model = Account::model()->find('yy=?',array($resultArray['uid']));
 				if (!$model) {
-					$this->render('bindyyfail', array('model'=>null,'msg'=>'您的账号没有在盖世豪侠中创建过任何角色'));
+					$this->render('bindyyfail', array('model'=>null,'msg'=>'您的账号没有在拍拍投中创建过任何角色'));
 					return;	
 				}
 				//if ($model->password != "") {
@@ -1561,9 +1561,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "盖世豪侠解绑YY账号";
+		$mailer->Subject = "拍拍投解绑YY账号";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1660,9 +1660,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "盖世豪侠邮箱验证";
+		$mailer->Subject = "拍拍投邮箱验证";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();
@@ -1784,9 +1784,9 @@ class AccountController extends Controller
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "盖世豪侠用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
 		$mailer->AddAddress($model->email);
-		$mailer->Subject = "盖世豪侠口令清除";
+		$mailer->Subject = "拍拍投口令清除";
 		$mailer->MsgHTML($message);
 
 		$ret = $mailer->send();

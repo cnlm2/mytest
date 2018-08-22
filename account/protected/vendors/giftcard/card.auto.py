@@ -304,7 +304,7 @@ Config = {
 	["8LT"] = {
 		'typeid' = 10132,
 		'prefix' : "8LT",
-		'desc' : "盖世豪侠YY特权礼包",
+		'desc' : "拍拍投YY特权礼包",
 		'reward' : "50808",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_YY c[20150123_YY]",
@@ -314,7 +314,7 @@ Config = {
 	["9LT"] = {
 		'typeid' = 10136,
 		'prefix' : "9LT",
-		'desc' : "盖世豪侠普通媒体礼包",
+		'desc' : "拍拍投普通媒体礼包",
 		'reward' : "50809",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_other c[20150123_other]",
@@ -324,7 +324,7 @@ Config = {
 	["LLT"] = {
 		'typeid' = 10140,
 		'prefix' : "LLT",
-		'desc' : "盖世豪侠论坛礼包",
+		'desc' : "拍拍投论坛礼包",
 		'reward' : "50842",
 		'type' : "gshx_activation",
 		'tags' : "2015_2_06_GSHXluntan",
@@ -334,7 +334,7 @@ Config = {
 	["UCT"] = {
 		'typeid' = 10144,
 		'prefix' : "UCT",
-		'desc' : "20150313盖世豪侠叶子猪特权礼包",
+		'desc' : "20150313拍拍投叶子猪特权礼包",
 		'reward' : "50862",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_12_yezizhu c[20150313_yezizhu]",
@@ -344,7 +344,7 @@ Config = {
 	["6CT"] = {
 		'typeid' = 10148,
 		'prefix' : "6CT",
-		'desc' : "20150415盖世豪侠17173独家大礼包",
+		'desc' : "20150415拍拍投17173独家大礼包",
 		'reward' : "90908",
 		'type' : "gshx_activation",
 		'tags' : "2015_4_15_YY c[20150415_17173]",
@@ -354,7 +354,7 @@ Config = {
 	["ZCT"] = {
 		'typeid' = 10152,
 		'prefix' : "ZCT",
-		'desc' : "20150605盖世豪侠毕业狂欢礼包",
+		'desc' : "20150605拍拍投毕业狂欢礼包",
 		'reward' : "514632",
 		'type' : "gshx_activation",
 		'tags' : "2015_4_15_other c[20150605_happy]",
@@ -364,7 +364,7 @@ Config = {
 	["4CT"] = {
 		'typeid' = 10156,
 		'prefix' : "4CT",
-		'desc' : "20150605盖世豪侠龙纹手环",
+		'desc' : "20150605拍拍投龙纹手环",
 		'reward' : "514636",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_LongWenShouHuan c[20150605_other]",
@@ -374,7 +374,7 @@ Config = {
 	["KCT"] = {
 		'typeid' = 10160,
 		'prefix' : "KCT",
-		'desc' : "20150710盖世豪侠随机礼包",
+		'desc' : "20150710拍拍投随机礼包",
 		'reward' : "514643",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_10_JiHuoMa c[common]",
@@ -384,7 +384,7 @@ Config = {
 	["8CT"] = {
 		'typeid' = 10164,
 		'prefix' : "8CT",
-		'desc' : "20150730盖世豪侠YY礼包",
+		'desc' : "20150730拍拍投YY礼包",
 		'reward' : "514651",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -394,7 +394,7 @@ Config = {
 	["9CT"] = {
 		'typeid' = 10168,
 		'prefix' : "9CT",
-		'desc' : "20150730盖世豪侠特权礼包",
+		'desc' : "20150730拍拍投特权礼包",
 		'reward' : "514659",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017592_CDKey]",
@@ -404,7 +404,7 @@ Config = {
 	["LCT"] = {
 		'typeid' = 10172,
 		'prefix' : "LCT",
-		'desc' : "20150806盖世豪侠回春汤",
+		'desc' : "20150806拍拍投回春汤",
 		'reward' : "515016",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015080610172_CDKey]",
@@ -414,7 +414,7 @@ Config = {
 	["U7T"] = {
 		'typeid' = 10176,
 		'prefix' : "U7T",
-		'desc' : "20150909盖世豪侠市场聂隐娘",
+		'desc' : "20150909拍拍投市场聂隐娘",
 		'reward' : "515021",
 		'type' : "gshx_activation",
 		'tags' : "2015_9_18_JiHuoMa c[2015090910176_CDKey]",
@@ -489,7 +489,7 @@ Config = {
 	["L7T"] = {
 		'typeid' = 10204,
 		'prefix' : "L7T",
-		'desc' : "20151218盖世豪侠QB宝箱",
+		'desc' : "20151218拍拍投QB宝箱",
 		'reward' : "515022",
 		'type' : "gshx_activation",
 		'tags' : "2015_12_18_Qb c[2015121810204_CDKey]",
@@ -995,7 +995,7 @@ Config = {
 	["BLT"] = {
 		'typeid' = 10133,
 		'prefix' : "BLT",
-		'desc' : "盖世豪侠17173特权礼包",
+		'desc' : "拍拍投17173特权礼包",
 		'reward' : "50805",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_17173 c[20150123_17173]",
@@ -1005,7 +1005,7 @@ Config = {
 	["WLT"] = {
 		'typeid' = 10137,
 		'prefix' : "WLT",
-		'desc' : "盖世豪侠移动端媒体礼包",
+		'desc' : "拍拍投移动端媒体礼包",
 		'reward' : "50514",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_Mobile c[20150123_Mobile]",
@@ -1015,7 +1015,7 @@ Config = {
 	["CLT"] = {
 		'typeid' = 10141,
 		'prefix' : "CLT",
-		'desc' : "新盖世豪侠论坛礼包",
+		'desc' : "新拍拍投论坛礼包",
 		'reward' : "50858",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_04_GSHXluntan",
@@ -1025,7 +1025,7 @@ Config = {
 	["YCT"] = {
 		'typeid' = 10145,
 		'prefix' : "YCT",
-		'desc' : "20150313盖世豪侠多玩特权礼包",
+		'desc' : "20150313拍拍投多玩特权礼包",
 		'reward' : "50863",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_12_duowan c[20150313_duowan]",
@@ -1035,7 +1035,7 @@ Config = {
 	["DCT"] = {
 		'typeid' = 10149,
 		'prefix' : "DCT",
-		'desc' : "20150415盖世豪侠YY独家大礼包",
+		'desc' : "20150415拍拍投YY独家大礼包",
 		'reward' : "90910",
 		'type' : "gshx_activation",
 		'tags' : "2015_4_15_YY c[20150415_YY]",
@@ -1045,7 +1045,7 @@ Config = {
 	["TCT"] = {
 		'typeid' = 10153,
 		'prefix' : "TCT",
-		'desc' : "20150605盖世豪侠激活码礼包",
+		'desc' : "20150605拍拍投激活码礼包",
 		'reward' : "514633",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_JiHuoMa c[20150605_CDKey]",
@@ -1055,7 +1055,7 @@ Config = {
 	["HCT"] = {
 		'typeid' = 10157,
 		'prefix' : "HCT",
-		'desc' : "20150605盖世豪侠内丹",
+		'desc' : "20150605拍拍投内丹",
 		'reward' : "514637",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_NeiDan c[20150605_other]",
@@ -1065,7 +1065,7 @@ Config = {
 	["XCT"] = {
 		'typeid' = 10161,
 		'prefix' : "XCT",
-		'desc' : "20150730盖世豪侠抢注礼包",
+		'desc' : "20150730拍拍投抢注礼包",
 		'reward' : "514645",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017585_CDKey]",
@@ -1075,7 +1075,7 @@ Config = {
 	["BCT"] = {
 		'typeid' = 10165,
 		'prefix' : "BCT",
-		'desc' : "20150730盖世豪侠新手卡礼包",
+		'desc' : "20150730拍拍投新手卡礼包",
 		'reward' : "514653",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017589_CDKey]",
@@ -1085,7 +1085,7 @@ Config = {
 	["WCT"] = {
 		'typeid' = 10169,
 		'prefix' : "WCT",
-		'desc' : "20150730盖世豪侠内测回馈礼包",
+		'desc' : "20150730拍拍投内测回馈礼包",
 		'reward' : "514661",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017593_CDKey]",
@@ -1095,7 +1095,7 @@ Config = {
 	["CCT"] = {
 		'typeid' = 10173,
 		'prefix' : "CCT",
-		'desc' : "20150806盖世豪侠龙纹手环",
+		'desc' : "20150806拍拍投龙纹手环",
 		'reward' : "515017",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015080610173_CDKey]",
@@ -1105,7 +1105,7 @@ Config = {
 	["Y7T"] = {
 		'typeid' = 10177,
 		'prefix' : "Y7T",
-		'desc' : "20150909盖世豪侠官方礼包",
+		'desc' : "20150909拍拍投官方礼包",
 		'reward' : "514628",
 		'type' : "gshx_activation",
 		'tags' : "2015_9_18_JiHuoMa c[2015090910177_CDKey]",
@@ -1115,7 +1115,7 @@ Config = {
 	["D7T"] = {
 		'typeid' = 10181,
 		'prefix' : "D7T",
-		'desc' : "20150918盖世豪侠公会礼包",
+		'desc' : "20150918拍拍投公会礼包",
 		'reward' : "514667",
 		'type' : "GH",
 		'tags' : "2015_9_18_gonghui c[2015091810181_CDKey]",
@@ -1181,7 +1181,7 @@ Config = {
 	["C7T"] = {
 		'typeid' = 10205,
 		'prefix' : "C7T",
-		'desc' : "20151010盖世豪侠随机测试礼包",
+		'desc' : "20151010拍拍投随机测试礼包",
 		'reward' : "514673",
 		'type' : "gshx_activation",
 		'tags' : "2015_1015kaifu_173MeiRi",
@@ -1202,7 +1202,7 @@ Config = {
 	["DMT"] = {
 		'typeid' = 10213,
 		'prefix' : "DMT",
-		'desc' : "20160112盖世豪侠QB宝箱",
+		'desc' : "20160112拍拍投QB宝箱",
 		'reward' : "515022",
 		'type' : "gshx_activation",
 		'tags' : "2016_1_12_Qb c[2015121810213_CDKey]",
@@ -1706,7 +1706,7 @@ Config = {
 	["VLT"] = {
 		'typeid' = 10134,
 		'prefix' : "VLT",
-		'desc' : "盖世豪侠新浪特权礼包",
+		'desc' : "拍拍投新浪特权礼包",
 		'reward' : "50806",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_xinlang c[20150123_xinlang]",
@@ -1716,7 +1716,7 @@ Config = {
 	["NLT"] = {
 		'typeid' = 10138,
 		'prefix' : "NLT",
-		'desc' : "盖世豪侠yy老玩家礼包",
+		'desc' : "拍拍投yy老玩家礼包",
 		'reward' : "50516",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_YYDX c[20150123_YYDX]",
@@ -1726,7 +1726,7 @@ Config = {
 	["7LT"] = {
 		'typeid' = 10142,
 		'prefix' : "7LT",
-		'desc' : "20150313盖世豪侠17173玩家礼包",
+		'desc' : "20150313拍拍投17173玩家礼包",
 		'reward' : "50860",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_12_17173 c[20150313_17173]",
@@ -1736,7 +1736,7 @@ Config = {
 	["QCT"] = {
 		'typeid' = 10146,
 		'prefix' : "QCT",
-		'desc' : "20150313盖世豪侠普通媒体特权礼包",
+		'desc' : "20150313拍拍投普通媒体特权礼包",
 		'reward' : "50864",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_12_other c[20150313_other]",
@@ -1746,7 +1746,7 @@ Config = {
 	["ACT"] = {
 		'typeid' = 10150,
 		'prefix' : "ACT",
-		'desc' : "20150415盖世豪侠YY每日礼包",
+		'desc' : "20150415拍拍投YY每日礼包",
 		'reward' : "90912",
 		'type' : "gshx_activation",
 		'tags' : "2015_4_15_YYmeiri ",
@@ -1756,7 +1756,7 @@ Config = {
 	["PCT"] = {
 		'typeid' = 10154,
 		'prefix' : "PCT",
-		'desc' : "20150605盖世豪侠抽奖侠义石",
+		'desc' : "20150605拍拍投抽奖侠义石",
 		'reward' : "514634",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_XiaYiShi c[20150605_XiaYiShi]",
@@ -1766,7 +1766,7 @@ Config = {
 	["SCT"] = {
 		'typeid' = 10158,
 		'prefix' : "SCT",
-		'desc' : "20150605盖世豪侠优质牧草",
+		'desc' : "20150605拍拍投优质牧草",
 		'reward' : "514638",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_YouZhiMuCao c[20150605_other]",
@@ -1776,7 +1776,7 @@ Config = {
 	["2CT"] = {
 		'typeid' = 10162,
 		'prefix' : "2CT",
-		'desc' : "20150730盖世豪侠叶子猪礼包",
+		'desc' : "20150730拍拍投叶子猪礼包",
 		'reward' : "514647",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -1786,7 +1786,7 @@ Config = {
 	["VCT"] = {
 		'typeid' = 10166,
 		'prefix' : "VCT",
-		'desc' : "20150730盖世豪侠精英回馈礼包",
+		'desc' : "20150730拍拍投精英回馈礼包",
 		'reward' : "514655",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017590_CDKey]",
@@ -1796,7 +1796,7 @@ Config = {
 	["NCT"] = {
 		'typeid' = 10170,
 		'prefix' : "NCT",
-		'desc' : "20150730盖世豪侠豪气冲天礼包",
+		'desc' : "20150730拍拍投豪气冲天礼包",
 		'reward' : "514665",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017600_CDKey]",
@@ -1806,7 +1806,7 @@ Config = {
 	["7CT"] = {
 		'typeid' = 10174,
 		'prefix' : "7CT",
-		'desc' : "20150806盖世豪侠侠义石",
+		'desc' : "20150806拍拍投侠义石",
 		'reward' : "515018",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015080610174_CDKey]",
@@ -1816,7 +1816,7 @@ Config = {
 	["Q7T"] = {
 		'typeid' = 10178,
 		'prefix' : "Q7T",
-		'desc' : "20150909盖世豪侠内渠聂隐娘",
+		'desc' : "20150909拍拍投内渠聂隐娘",
 		'reward' : "515021",
 		'type' : "gshx_activation",
 		'tags' : "2015_9_18_JiHuoMa c[2015090910176_CDKey]",
@@ -1826,7 +1826,7 @@ Config = {
 	["A7T"] = {
 		'typeid' = 10182,
 		'prefix' : "A7T",
-		'desc' : "20150918盖世豪侠QQ礼包",
+		'desc' : "20150918拍拍投QQ礼包",
 		'reward' : "514669",
 		'type' : "gshx_activation",
 		'tags' : "2015_10_22_QQJiHuoMa c[2015102210182_CDKey]",
@@ -2031,7 +2031,7 @@ Config = {
 	["2UP"] = {
 		'typeid' = 10258,
 		'prefix' : "2UP",
-		'desc' : "20161022盖世豪侠官方礼包",
+		'desc' : "20161022拍拍投官方礼包",
 		'reward' : "91020",
 		'type' : "gshx_activation",
 		'tags' : "2016_10_22_LB c[20160820110258_CDKey]",
@@ -2408,7 +2408,7 @@ Config = {
 	["ILT"] = {
 		'typeid' = 10131,
 		'prefix' : "ILT",
-		'desc' : "盖世豪侠激活码",
+		'desc' : "拍拍投激活码",
 		'reward' : "514615",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_8guanfang c[longren]",
@@ -2418,7 +2418,7 @@ Config = {
 	["5LT"] = {
 		'typeid' = 10135,
 		'prefix' : "5LT",
-		'desc' : "盖世豪侠叶子猪特权礼包",
+		'desc' : "拍拍投叶子猪特权礼包",
 		'reward' : "50807",
 		'type' : "gshx_activation",
 		'tags' : "2015_1_23_yezizhu c[20150123_yezizhu]",
@@ -2428,7 +2428,7 @@ Config = {
 	["3LT"] = {
 		'typeid' = 10139,
 		'prefix' : "3LT",
-		'desc' : "盖世豪侠yy老玩家礼包",
+		'desc' : "拍拍投yy老玩家礼包",
 		'reward' : "50841",
 		'type' : "gshx_activation",
 		'tags' : "2015_2_06_YYXinChun c[20150206_YYXinChun]",
@@ -2438,7 +2438,7 @@ Config = {
 	["MLT"] = {
 		'typeid' = 10143,
 		'prefix' : "MLT",
-		'desc' : "20150313盖世豪侠新浪特权礼包",
+		'desc' : "20150313拍拍投新浪特权礼包",
 		'reward' : "50861",
 		'type' : "gshx_activation",
 		'tags' : "2015_3_12_xinlang c[20150313_xinlang]",
@@ -2458,7 +2458,7 @@ Config = {
 	["ECT"] = {
 		'typeid' = 10151,
 		'prefix' : "ECT",
-		'desc' : "20150415盖世豪侠媒体礼包",
+		'desc' : "20150415拍拍投媒体礼包",
 		'reward' : "90914",
 		'type' : "gshx_activation",
 		'tags' : "2015_4_15_other c[20150415_other]",
@@ -2468,7 +2468,7 @@ Config = {
 	["FCT"] = {
 		'typeid' = 10155,
 		'prefix' : "FCT",
-		'desc' : "20150605盖世豪侠抽奖洗髓丹",
+		'desc' : "20150605拍拍投抽奖洗髓丹",
 		'reward' : "514635",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_XiSuiDan c[20150605_other]",
@@ -2478,7 +2478,7 @@ Config = {
 	["GCT"] = {
 		'typeid' = 10159,
 		'prefix' : "GCT",
-		'desc' : "20150605盖世豪侠激活码礼包2号",
+		'desc' : "20150605拍拍投激活码礼包2号",
 		'reward' : "514633",
 		'type' : "gshx_activation",
 		'tags' : "2015_6_5_JiHuoMa c[20150605_CDKey]",
@@ -2488,7 +2488,7 @@ Config = {
 	["ICT"] = {
 		'typeid' = 10163,
 		'prefix' : "ICT",
-		'desc' : "20150730盖世豪侠17173礼包",
+		'desc' : "20150730拍拍投17173礼包",
 		'reward' : "514649",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -2498,7 +2498,7 @@ Config = {
 	["5CT"] = {
 		'typeid' = 10167,
 		'prefix' : "5CT",
-		'desc' : "20150730盖世豪侠新手见面礼包",
+		'desc' : "20150730拍拍投新手见面礼包",
 		'reward' : "514657",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015073017591_CDKey]",
@@ -2508,7 +2508,7 @@ Config = {
 	["3CT"] = {
 		'typeid' = 10171,
 		'prefix' : "3CT",
-		'desc' : "20150806盖世豪侠内丹",
+		'desc' : "20150806拍拍投内丹",
 		'reward' : "515015",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015080610171_CDKey]",
@@ -2518,7 +2518,7 @@ Config = {
 	["MCT"] = {
 		'typeid' = 10175,
 		'prefix' : "MCT",
-		'desc' : "20150806盖世豪侠如意卷",
+		'desc' : "20150806拍拍投如意卷",
 		'reward' : "515019",
 		'type' : "gshx_activation",
 		'tags' : "2015_7_30_JiHuoMa c[2015080610175_CDKey]",
@@ -2528,7 +2528,7 @@ Config = {
 	["R7T"] = {
 		'typeid' = 10179,
 		'prefix' : "R7T",
-		'desc' : "20150918盖世豪侠QB宝箱",
+		'desc' : "20150918拍拍投QB宝箱",
 		'reward' : "515022",
 		'type' : "gshx_activation",
 		'tags' : "2015_9_18_Qb c[2015091810179_CDKey]",
@@ -2539,7 +2539,7 @@ Config = {
 	["E7T"] = {
 		'typeid' = 10183,
 		'prefix' : "E7T",
-		'desc' : "20151010盖世豪侠随机测试礼包",
+		'desc' : "20151010拍拍投随机测试礼包",
 		'reward' : "514673",
 		'type' : "gshx_activation",
 		'tags' : "2015_1015kaifu_173MeiRi",
@@ -2648,7 +2648,7 @@ Config = {
 	["GMT"] = {
 		'typeid' = 10223,
 		'prefix' : "GMT",
-		'desc' : "20160311多玩盖世豪侠飞升每日礼包",
+		'desc' : "20160311多玩拍拍投飞升每日礼包",
 		'reward' : "90952",
 		'type' : "gshx_activation",
 		'tags' : "2016_3_11_YYmeiri ",

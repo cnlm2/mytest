@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>盖世豪侠</title>
-    <meta name="description" content="盖世豪侠" />
+    <title>拍拍投</title>
+    <meta name="description" content="拍拍投" />
 
 	<?php
 		$cs = Yii::app()->clientScript;

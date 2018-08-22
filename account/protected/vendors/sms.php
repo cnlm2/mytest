@@ -14,7 +14,7 @@ function SendMsg($phone, $msgid, $msgparam) {
     $c->secretKey = 'ecb5ecd65462ff08d9d143aa11c5c04d';
 	$req = new AlibabaAliqinFcSmsNumSendRequest;
 	$req->setSmsType("normal");
-	$req->setSmsFreeSignName("盖世豪侠");
+	$req->setSmsFreeSignName("拍拍投");
 	$req->setSmsParam($msgparam);
 	$req->setRecNum($phone);
 	$req->setSmsTemplateCode($msgid);

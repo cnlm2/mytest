@@ -52,7 +52,7 @@ class ActivateForm extends CFormModel
 		#	return false;
 		#}
 
-		//盖世豪侠 product => 3
+		//拍拍投 product => 3
 		$new_activation = new Activation();
 		$new_activation->account_id = $account_id;
 		$new_activation->product_id = 3;

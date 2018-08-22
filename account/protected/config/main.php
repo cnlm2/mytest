@@ -23,7 +23,7 @@ define('UC_PPP', '20');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'盖世豪侠用户中心',
+	'name'=>'拍拍投用户中心',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

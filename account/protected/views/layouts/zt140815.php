@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="盖世豪侠,武侠,回合制,盖世豪侠官网,盖世豪侠官方网站" />
+    <meta name="keywords" content="拍拍投,武侠,回合制,拍拍投官网,拍拍投官方网站" />
     <meta name="description" content="" />
-    <title>盖世豪侠首页大侠收集|武侠回合制网络游戏|2D回合制网络游戏</title>
+    <title>拍拍投首页大侠收集|武侠回合制网络游戏|2D回合制网络游戏</title>
     <link rel="shortcut icon" href="http://www.greenyouxi.com/icon.ico" type="image/vnd.microsoft.icon">
     <script type="text/javascript" src="/js/SuperSllde/jquery1.42.min.js"></script>
     <link href="/zhuanti/201408/css/zhuanti.css" rel="stylesheet" type="text/css">
