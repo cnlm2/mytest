@@ -80,7 +80,7 @@ class Account extends CActiveRecord
 			//array('nickname,originpassword', 'required', 'on'=>'openbbs'),
 			//array('nickname', 'length', 'min'=>2, 'max'=>50, 'on'=>'openbbs'),
 			//array('nickname', 'checknick', 'on'=>'openbbs'),
-			array('account', 'checkbbs', 'on'=>'openbbs'),
+			//array('account', 'checkbbs', 'on'=>'openbbs'),
 			array('originpassword', 'authenticate2', 'on'=>'openbbs'),
 			//array('yy', 'checkyy', 'on'=>'bindyy'),
 			//array('from', 'checkfrom', 'on'=>array('create')),
