@@ -37,7 +37,7 @@ a:hover {color:#25a68d;text-decoration:underline}
 
 #wrap {width:100%;min-width:900px;max-width:1920px;overflow:hidden;margin:0 auto;background:url("../images/bg.jpg") no-repeat center 0;}
 
-#main {margin:0 auto;}
+#main {width:900px;margin:0 auto;}
 
 #header {position:relative;height:110px;padding-top:40px;}
 #header h1 {display:block;width:315px;height:67px;overflow: hidden;background: url("../images/header_bg.png") no-repeat;text-indent:-9999px;}
@@ -62,7 +62,7 @@ a:hover {color:#25a68d;text-decoration:underline}
 #info-more {position: absolute;top:20px;right:140px;color:#bda388;cursor:pointer;z-index:3;width:60px}
 
 #nav {float:left;width:195px;height:420px;background: #f1f3f5;z-index:10;}
-#nav li {position:relative;height:60px;background:url("http://cdn.greenyouxi.com/account/images/nav_icon.png") no-repeat 45px 23px;font-family:"Microsoft YaHei";vertical-align: middle;}
+#nav li {position:relative;height:60px;background:url("../images/nav_icon.png") no-repeat 45px 23px;font-family:"Microsoft YaHei";vertical-align: middle;}
 #nav li.nav-2 {background-position:45px -37px;}
 #nav li.nav-3 {background-position:45px -97px;}
 #nav li.nav-4 {background-position:45px -157px;}
@@ -94,12 +94,12 @@ a:hover {color:#25a68d;text-decoration:underline}
 #info .info-box h3 {height:60px;padding-left:11px;border-bottom:1px solid #2bbfbd;}
 #info .info-box h3 strong {position:relative;display:block;width:98px;height:59px;overflow:hidden;margin-bottom:-2px;background:url("../images/title_1.png") no-repeat 0 25px;border-bottom:3px solid #2bbfbd;text-indent:-9999px;}
 #info .info-box h3 strong.title-2 {width:197px;background-image:url(../images/title_2.png)}
-#info .info-box h3 strong.title-3 {background-image:url(http://cdn.greenyouxi.com/account/images/title_3.png)}
-#info .info-box h3 strong.title-4 {background-image:url(http://cdn.greenyouxi.com/account/images/title_4.png)}
-#info .info-box h3 strong.title-5 {background-image:url(http://cdn.greenyouxi.com/account/images/title_5.png)}
-#info .info-box h3 strong.title-6 {background-image:url(http://cdn.greenyouxi.com/account/images/title_6.png)}
-#info .info-box h3 strong.title-7 {background-image:url(http://cdn.greenyouxi.com/account/images/title_7.png)}
-#info .info-box h3 strong.title-info {background-image:url(http://cdn.greenyouxi.com/account/images/title_info.png)}
+#info .info-box h3 strong.title-3 {background-image:url(../images/title_3.png)}
+#info .info-box h3 strong.title-4 {background-image:url(../images/title_4.png)}
+#info .info-box h3 strong.title-5 {background-image:url(../images/title_5.png)}
+#info .info-box h3 strong.title-6 {background-image:url(../images/title_6.png)}
+#info .info-box h3 strong.title-7 {background-image:url(../images/title_7.png)}
+#info .info-box h3 strong.title-info {background-image:url(../images/title_info.png)}
 
 .exp {margin:10px 12px 0;color:#bda388;line-height:24px;}
 
@@ -113,7 +113,7 @@ a:hover {color:#25a68d;text-decoration:underline}
 .input-list li .des {position:relative;margin-left:-72px;color:#939392;}
 .input-list li .des a {color:#bda388;text-decoration:underline;cursor: pointer;}
 .input-list li .des a:Hover {color:#2bbfbd;}
-.input-list li .submit {display:block;width:100px;height:40px;margin-top:20px;background:url("http://cdn.greenyouxi.com/account/images/btn_bg.jpg") no-repeat;border:none;color:#edf4f3;cursor: pointer;}
+.input-list li .submit {display:block;width:100px;height:40px;margin-top:20px;background:url("../images/btn_bg.jpg") no-repeat;border:none;color:#edf4f3;cursor: pointer;}
 
 .reward-list {margin:20px 0 0;}
 .reward-list li {height:32px;}
@@ -157,24 +157,24 @@ a:hover {color:#25a68d;text-decoration:underline}
 .pay-tabcon .pay-list li .tips {color:#939392;}
 .pay-tabcon .con-bank .pay-list li .tips {display:none;}
 .pay-tabcon .pay-list li .des {position:relative;display:block;margin-left:-72px;color:#d71015;line-height:22px;}
-.pay-tabcon .pay-list li .submit {display:block;width:100px;height:40px;margin-top:20px;background:url("http://cdn.greenyouxi.com/account/images/btn_bg.jpg") no-repeat;border:none;color:#edf4f3;cursor: pointer;}
+.pay-tabcon .pay-list li .submit {display:block;width:100px;height:40px;margin-top:20px;background:url("../images/btn_bg.jpg") no-repeat;border:none;color:#edf4f3;cursor: pointer;}
 .pay-tabcon .bank-list {position:absolute;top:1px;right:20px;width:312px;z-index: 2;}
 .pay-tabcon .bank-list strong {display:block;height:40px;line-height:40px;font-weight:100;}
-.pay-tabcon .bank-list li {float:left;width:104px;height:30px;padding:5px 0;background:url("http://cdn.greenyouxi.com/account/images/bank_1.png") no-repeat 18px center;line-height:30px;vertical-align: middle;}
-.pay-tabcon .bank-list li.bank-2 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_2.png")}
-.pay-tabcon .bank-list li.bank-3 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_3.png")}
-.pay-tabcon .bank-list li.bank-4 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_4.png")}
-.pay-tabcon .bank-list li.bank-5 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_5.png")}
-.pay-tabcon .bank-list li.bank-6 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_6.png")}
-.pay-tabcon .bank-list li.bank-7 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_7.png")}
-.pay-tabcon .bank-list li.bank-8 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_8.png")}
-.pay-tabcon .bank-list li.bank-9 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_9.png")}
-.pay-tabcon .bank-list li.bank-10 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_10.png")}
-.pay-tabcon .bank-list li.bank-11 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_11.png")}
-.pay-tabcon .bank-list li.bank-12 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_12.png")}
-.pay-tabcon .bank-list li.bank-13 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_13.png")}
-.pay-tabcon .bank-list li.bank-14 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_14.png")}
-.pay-tabcon .bank-list li.bank-15 {background-image:url("http://cdn.greenyouxi.com/account/images/bank_15.png")}
+.pay-tabcon .bank-list li {float:left;width:104px;height:30px;padding:5px 0;background:url("../images/bank_1.png") no-repeat 18px center;line-height:30px;vertical-align: middle;}
+.pay-tabcon .bank-list li.bank-2 {background-image:url("../images/bank_2.png")}
+.pay-tabcon .bank-list li.bank-3 {background-image:url("../images/bank_3.png")}
+.pay-tabcon .bank-list li.bank-4 {background-image:url("../images/bank_4.png")}
+.pay-tabcon .bank-list li.bank-5 {background-image:url("../images/bank_5.png")}
+.pay-tabcon .bank-list li.bank-6 {background-image:url("../images/bank_6.png")}
+.pay-tabcon .bank-list li.bank-7 {background-image:url("../images/bank_7.png")}
+.pay-tabcon .bank-list li.bank-8 {background-image:url("../images/bank_8.png")}
+.pay-tabcon .bank-list li.bank-9 {background-image:url("../images/bank_9.png")}
+.pay-tabcon .bank-list li.bank-10 {background-image:url("../images/bank_10.png")}
+.pay-tabcon .bank-list li.bank-11 {background-image:url("../images/bank_11.png")}
+.pay-tabcon .bank-list li.bank-12 {background-image:url("../images/bank_12.png")}
+.pay-tabcon .bank-list li.bank-13 {background-image:url("../images/bank_13.png")}
+.pay-tabcon .bank-list li.bank-14 {background-image:url("../images/bank_14.png")}
+.pay-tabcon .bank-list li.bank-15 {background-image:url("../images/bank_15.png")}
 .pay-tabcon .bank-list li input {vertical-align: middle;margin-right:27px;}
 
 #banner {overflow:hidden;margin-top:42px;}
@@ -182,14 +182,14 @@ a:hover {color:#25a68d;text-decoration:underline}
 
 #footer {position:relative;padding:13px 0 20px 0;margin-top:56px;border-top:1px solid #c1c1c1;font-size:12px;font-family:"simSun";}
 #footer .foot {width:585px;padding-left:300px;margin:0 auto;}
-#footer .logo {position:absolute;top:13px;left:50%;display:block;width:134px;height:45px;background:url("http://cdn.greenyouxi.com/account/images/footer_logo.jpg") no-repeat;border:3px solid #cbe6ed;margin-left:-245px;}
+#footer .logo {position:absolute;top:13px;left:50%;display:block;width:134px;height:45px;background:url("../images/footer_logo.jpg") no-repeat;border:3px solid #cbe6ed;margin-left:-245px;}
 #footer .mes {padding-bottom:15px;color:#009233;}
 #footer .copyright {color:#767196;}
 
 #pop-bg {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity:.7;filter:alpha(opacity:70);z-index:9999;}
-#log {position:fixed;top:50%;left:50%;display:none;width:392px;height:359px;padding-top:247px;margin:-303px 0 0 -196px;background:#fff url(http://cdn.greenyouxi.com/account/images/log_icon.png) no-repeat center 55px;box-shadow:0 0 35px rgba(0,0,0,.1);font-size:14px;z-index:10000;}
+#log {position:fixed;top:50%;left:50%;display:none;width:392px;height:359px;padding-top:247px;margin:-303px 0 0 -196px;background:#fff url(../images/log_icon.png) no-repeat center 55px;box-shadow:0 0 35px rgba(0,0,0,.1);font-size:14px;z-index:10000;}
 #log .list {width:275px;margin:0 auto;}
-#log .list li.input {position:relative;height:40px;padding-left:35px;margin-top:16px;background:url("http://cdn.greenyouxi.com/account/images/log_icon_1.png") no-repeat 0 7px;border-bottom:1px solid #f0eae3;}
+#log .list li.input {position:relative;height:40px;padding-left:35px;margin-top:16px;background:url("../images/log_icon_1.png") no-repeat 0 7px;border-bottom:1px solid #f0eae3;}
 #log .list li.password {background-position:0 -43px;}
 #log .list li.input input {width:100%;height:40px;background:none;border:none;line-height:40px;outline:none;}
 #log .list li.input .info {position:absolute;top:50%;left:0;display:block;width:100%;height:40px;margin-top:-20px;line-height:40px;text-indent:35px;}
@@ -202,17 +202,17 @@ a:hover {color:#25a68d;text-decoration:underline}
 
 #content h3 {height:60px;padding-left:11px;border-bottom:1px solid #2bbfbd;}
 #content h3 strong {position:relative;display:block;width:98px;height:59px;overflow:hidden;margin-bottom:-2px;background:url("../images/title_1.png") no-repeat 0 25px;border-bottom:3px solid #2bbfbd;text-indent:-9999px;}
-#content h3 strong.title-2 {width:197px;background-image:url(http://cdn.greenyouxi.com/account/images/title_2.png)}
-#content h3 strong.title-3 {background-image:url(http://cdn.greenyouxi.com/account/images/title_3.png)}
-#content h3 strong.title-4 {background-image:url(http://cdn.greenyouxi.com/account/images/title_4.png)}
-#content h3 strong.title-5 {background-image:url(http://cdn.greenyouxi.com/account/images/title_5.png)}
-#content h3 strong.title-6 {background-image:url(http://cdn.greenyouxi.com/account/images/title_6.png)}
-#content h3 strong.title-7 {background-image:url(http://cdn.greenyouxi.com/account/images/title_7.png)}
-#content h3 strong.title-8 {background-image:url(http://cdn.greenyouxi.com/account/images/title_8.png)}
-#content h3 strong.title-9 {background-image:url(http://cdn.greenyouxi.com/account/images/title_9.png)}
-#content h3 strong.title-10 {background-image:url(http://cdn.greenyouxi.com/account/images/title_10.png)}
-#content h3 strong.title-11 {background-image:url(http://cdn.greenyouxi.com/account/images/title_11.png)}
-#content h3 strong.title-info {background-image:url(http://cdn.greenyouxi.com/account/images/title_info.png)}
+#content h3 strong.title-2 {width:197px;background-image:url(../images/title_2.png)}
+#content h3 strong.title-3 {background-image:url(../images/title_3.png)}
+#content h3 strong.title-4 {background-image:url(../images/title_4.png)}
+#content h3 strong.title-5 {background-image:url(../images/title_5.png)}
+#content h3 strong.title-6 {background-image:url(../images/title_6.png)}
+#content h3 strong.title-7 {background-image:url(../images/title_7.png)}
+#content h3 strong.title-8 {background-image:url(../images/title_8.png)}
+#content h3 strong.title-9 {background-image:url(../images/title_9.png)}
+#content h3 strong.title-10 {background-image:url(../images/title_10.png)}
+#content h3 strong.title-11 {background-image:url(../images/title_11.png)}
+#content h3 strong.title-info {background-image:url(../images/title_info.png)}
 #content p {color:#939392}
 #content p a {color:#bda388;text-decoration:underline;cursor:pointer}
 
