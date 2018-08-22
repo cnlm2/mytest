@@ -188,8 +188,8 @@ class AccountController extends Controller
 
 		if(isset($_POST['Account']))
 		{
-			Yii::import('application.vendors.*');
-			require_once('ucenter.php');
+			//Yii::import('application.vendors.*');
+			//require_once('ucenter.php');
 
 			//$_POST['Account']['email'] = strtolower($_POST['Account']['email']);
 

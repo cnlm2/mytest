@@ -9,7 +9,7 @@
  * @property string $password
  * @property string $idcard
  * @property string $email
- * @property integer $verified
+ //* @property integer $verified
  * @property string $name
  * @property string $time
  */
@@ -19,7 +19,7 @@ class Account extends CActiveRecord
 	public $oldpassword;
 	public $originpassword;
 	public $isagree;
-	public $nickname;
+	//public $nickname;
 	public $verifyCode;
 
 	private $_oldAttributes;
