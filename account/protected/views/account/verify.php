@@ -1,6 +1,6 @@
 <html><body><div style="width:600px">
 <p>亲爱的用户，您好！</p>
-<p>欢迎您来到《拍拍投》，请点击下面链接来验证您的安全邮箱：</p>
+<p>欢迎您来到《拍拍富》，请点击下面链接来验证您的安全邮箱：</p>
 <p><a target="_blank" href="http://www.greenyouxi.com/account/index.php/account/verify/<?php echo $token;?>">
 http://www.greenyouxi.com/account/index.php/account/verify/<?php echo $token;?></a>
 <p>（请在24小时内完成验证，24小时后此邮件失效，您将需要提交验证请求）</p>

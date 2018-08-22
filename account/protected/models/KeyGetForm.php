@@ -43,7 +43,7 @@ class KeyGetForm extends CFormModel
 	{
 		return array(
 			array(
-				"《拍拍投》的游戏画面是___？",
+				"《拍拍富》的游戏画面是___？",
 				array(
 					"2D",
 					"2.5D",
@@ -52,7 +52,7 @@ class KeyGetForm extends CFormModel
 				),
 			),
 			array(
-				"《拍拍投》是什么类型的游戏？",
+				"《拍拍富》是什么类型的游戏？",
 				array(
 					"回合制",
 					"射击",
@@ -79,7 +79,7 @@ class KeyGetForm extends CFormModel
 				),
 			),
 			array(
-				"《拍拍投》的官网地址是:",
+				"《拍拍富》的官网地址是:",
 				array(
 					"www.dxqzol.com",
 					"www.dxqzol123.com",

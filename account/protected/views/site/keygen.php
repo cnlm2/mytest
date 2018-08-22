@@ -15,7 +15,7 @@ $this->breadcrumbs=array(
 )); ?>
 
 	<p class="note">带 <span class="required">*</span> 是必填项.</p>
-	<p class="note">拍拍投官网用激活码的说明必须以"official"开头（不含引号)。</p>
+	<p class="note">拍拍富官网用激活码的说明必须以"official"开头（不含引号)。</p>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'comment'); ?>

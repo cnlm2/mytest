@@ -79,9 +79,9 @@ class FetchPasswordForm extends CFormModel
 		#$mailer->Username = "webmaster@dxqzol.com";
 		#$mailer->Password = "lianpeng123";
 		$mailer->CharSet = "UTF-8";
-		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍投用户中心");
+		$mailer->SetFrom("webmaster@dxqzol.com", "拍拍富用户中心");
 		$mailer->AddAddress($this->user->email);
-		$mailer->Subject = "拍拍投密码重置";
+		$mailer->Subject = "拍拍富密码重置";
 		$mailer->MsgHTML($message);
 
 		return $mailer->send() ? true : false;

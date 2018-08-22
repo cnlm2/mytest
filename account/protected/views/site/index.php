@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 &nbsp;
-<h1>欢迎来到<b>拍拍投</b>用户中心，您可以：</h1>
+<h1>欢迎来到<b>拍拍富</b>用户中心，您可以：</h1>
 &nbsp;
 
 <div class="portlet-content">

@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>拍拍投</title>
-    <meta name="description" content="拍拍投" />
+    <title>拍拍富</title>
+    <meta name="description" content="拍拍富" />
 
 	<?php
 		$cs = Yii::app()->clientScript;
@@ -29,32 +29,29 @@
         </div>
 		<ul id="nav">
                <li class="nav-1">
-			   	<a href="<?php echo $this->createUrl('account/giftcenter')  ?>"><i></i>奖励中心</a>
+			   	<a href="<?php echo $this->createUrl('account/giftcenter')  ?>"><i></i>用户授权</a>
                </li>
                <li class="nav-2">
-			   	<a href="<?php echo $this->createUrl('account/update', array('id'=>Yii::app()->user->id))  ?>"><i></i>账号安全</a>
+			   	<a href="<?php echo $this->createUrl('account/update', array('id'=>Yii::app()->user->id))  ?>"><i></i>陪标策略</a>
                </li>
                <li class="nav-3">
-			   	<a href="<?php echo $this->createUrl('account/password', array('id'=>Yii::app()->user->id))  ?>"><i></i>修改密码</a>
+			   	<a href="<?php echo $this->createUrl('account/password', array('id'=>Yii::app()->user->id))  ?>"><i></i>信标策略</a>
                </li>
                <li class="nav-4">
-			   	<a href="<?php echo $this->createUrl('account/cleartoken')  ?>"><i></i>清除口令</a>
+			   	<a href="<?php echo $this->createUrl('account/cleartoken')  ?>"><i></i>转让策略</a>
                </li>
                <li class="nav-5">
-			   	<a href="<?php echo $this->createUrl('charge/index')  ?>"><i></i>订单列表</a>
+			   	<a href="<?php echo $this->createUrl('charge/index')  ?>"><i></i>自定义策略</a>
                </li>
                <li class="nav-6">
-			   	<a href="<?php echo $this->createUrl('charge/create')  ?>"><i></i>账户充值</a>
+			   	<a href="<?php echo $this->createUrl('charge/create')  ?>"><i></i>统计分析</a>
                </li>
                <li class="nav-7">
-			   	<a href="<?php echo $this->createUrl('account/openbbs')  ?>"><i></i>开通论坛</a>
+			   	<a href="<?php echo $this->createUrl('account/openbbs')  ?>"><i></i>充值记录</a>
                </li>
-			   <?php
-					if (Promoter::model()->findByPk(Yii::app()->user->getId())) {
-						$url = $this->createUrl('promoter/index');
-						echo("<li class='nav-7'>  <a href= $url><i></i>推广查询</a> </li>");
-					}
-			   ?>
+               <li class="nav-7">
+			   	<a href="<?php echo $this->createUrl('account/openbbs')  ?>"><i></i>常见问题</a>
+               </li>
         </ul>
         <div class="main">
 			<?php if ( Yii::app()->user->isGuest ) { ?>

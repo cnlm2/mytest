@@ -1154,9 +1154,9 @@ GiftcardConfig = {
 		game_type = 27,
 	},
 ----------------------------------------------------------------------------------------------------
---拍拍投官方激活码
+--拍拍富官方激活码
 	[10131] = {
-		desc = "拍拍投激活码",
+		desc = "拍拍富激活码",
 		reward = "514615",
 		type = "gshx_activation",
 		tags = "2015_1_8guanfang c[longren]",
@@ -1165,9 +1165,9 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 
-	----------------------拍拍投首测媒体礼包------------------------------------------
+	----------------------拍拍富首测媒体礼包------------------------------------------
 	[10132] = {
-		desc = "拍拍投YY特权礼包",
+		desc = "拍拍富YY特权礼包",
 		reward = "50808",
 		type = "gshx_activation",
 		tags = "2015_1_23_YY c[20150123_YY]",
@@ -1177,7 +1177,7 @@ GiftcardConfig = {
 	},
 
 	[10133] = {
-		desc = "拍拍投17173特权礼包",
+		desc = "拍拍富17173特权礼包",
 		reward = "50805",
 		type = "gshx_activation",
 		tags = "2015_1_23_17173 c[20150123_17173]",
@@ -1187,7 +1187,7 @@ GiftcardConfig = {
 	},
 
 	[10134] = {
-		desc = "拍拍投新浪特权礼包",
+		desc = "拍拍富新浪特权礼包",
 		reward = "50806",
 		type = "gshx_activation",
 		tags = "2015_1_23_xinlang c[20150123_xinlang]",
@@ -1197,7 +1197,7 @@ GiftcardConfig = {
 	},
 
 	[10135] = {
-		desc = "拍拍投叶子猪特权礼包",
+		desc = "拍拍富叶子猪特权礼包",
 		reward = "50807",
 		type = "gshx_activation",
 		tags = "2015_1_23_yezizhu c[20150123_yezizhu]",
@@ -1207,7 +1207,7 @@ GiftcardConfig = {
 	},
 
 	[10136] = {
-		desc = "拍拍投普通媒体礼包",
+		desc = "拍拍富普通媒体礼包",
 		reward = "50809",
 		type = "gshx_activation",
 		tags = "2015_1_23_other c[20150123_other]",
@@ -1217,7 +1217,7 @@ GiftcardConfig = {
 	},
 
 	[10137] = {
-		desc = "拍拍投移动端媒体礼包",
+		desc = "拍拍富移动端媒体礼包",
 		reward = "50514",
 		type = "gshx_activation",
 		tags = "2015_1_23_Mobile c[20150123_Mobile]",
@@ -1227,7 +1227,7 @@ GiftcardConfig = {
 	},
 
 	[10138] = {
-		desc = "拍拍投yy老玩家礼包",
+		desc = "拍拍富yy老玩家礼包",
 		reward = "50516",
 		type = "gshx_activation",
 		tags = "2015_1_23_YYDX c[20150123_YYDX]",
@@ -1237,7 +1237,7 @@ GiftcardConfig = {
 	},
 
 	[10139] = {
-		desc = "拍拍投yy老玩家礼包",
+		desc = "拍拍富yy老玩家礼包",
 		reward = "50841",
 		type = "gshx_activation",
 		tags = "2015_2_06_YYXinChun c[20150206_YYXinChun]",
@@ -1247,7 +1247,7 @@ GiftcardConfig = {
 	},
 
 	[10140] = {
-		desc = "拍拍投论坛礼包",
+		desc = "拍拍富论坛礼包",
 		reward = "50842",
 		type = "gshx_activation",
 		tags = "2015_2_06_GSHXluntan",
@@ -1257,7 +1257,7 @@ GiftcardConfig = {
 	},
 
 	[10141] = {
-		desc = "新拍拍投论坛礼包",
+		desc = "新拍拍富论坛礼包",
 		reward = "50858",
 		type = "gshx_activation",
 		tags = "2015_3_04_GSHXluntan",
@@ -1267,7 +1267,7 @@ GiftcardConfig = {
 	},
 
 	[10142] = {
-		desc = "20150313拍拍投17173玩家礼包",
+		desc = "20150313拍拍富17173玩家礼包",
 		reward = "50860",
 		type = "gshx_activation",
 		tags = "2015_3_12_17173 c[20150313_17173]",
@@ -1277,7 +1277,7 @@ GiftcardConfig = {
 	},
 
 	[10143] = {
-		desc = "20150313拍拍投新浪特权礼包",
+		desc = "20150313拍拍富新浪特权礼包",
 		reward = "50861",
 		type = "gshx_activation",
 		tags = "2015_3_12_xinlang c[20150313_xinlang]",
@@ -1287,7 +1287,7 @@ GiftcardConfig = {
 	},
 
 	[10144] = {
-		desc = "20150313拍拍投叶子猪特权礼包",
+		desc = "20150313拍拍富叶子猪特权礼包",
 		reward = "50862",
 		type = "gshx_activation",
 		tags = "2015_3_12_yezizhu c[20150313_yezizhu]",
@@ -1297,7 +1297,7 @@ GiftcardConfig = {
 	},
 
 	[10145] = {
-		desc = "20150313拍拍投多玩特权礼包",
+		desc = "20150313拍拍富多玩特权礼包",
 		reward = "50863",
 		type = "gshx_activation",
 		tags = "2015_3_12_duowan c[20150313_duowan]",
@@ -1307,7 +1307,7 @@ GiftcardConfig = {
 	},
 
 	[10146] = {
-		desc = "20150313拍拍投普通媒体特权礼包",
+		desc = "20150313拍拍富普通媒体特权礼包",
 		reward = "50864",
 		type = "gshx_activation",
 		tags = "2015_3_12_other c[20150313_other]",
@@ -1327,7 +1327,7 @@ GiftcardConfig = {
 	},
 
 	[10148] = {
-		desc = "20150415拍拍投17173独家大礼包",
+		desc = "20150415拍拍富17173独家大礼包",
 		reward = "90908",
 		type = "gshx_activation",
 		tags = "2015_4_15_YY c[20150415_17173]",
@@ -1337,7 +1337,7 @@ GiftcardConfig = {
 	},
 
 	[10149] = {
-		desc = "20150415拍拍投YY独家大礼包",
+		desc = "20150415拍拍富YY独家大礼包",
 		reward = "90910",
 		type = "gshx_activation",
 		tags = "2015_4_15_YY c[20150415_YY]",
@@ -1347,7 +1347,7 @@ GiftcardConfig = {
 	},
 
 	[10150] = {
-		desc = "20150415拍拍投YY每日礼包",
+		desc = "20150415拍拍富YY每日礼包",
 		reward = "90912",
 		type = "gshx_activation",
 		tags = "2015_4_15_YYmeiri ",
@@ -1357,7 +1357,7 @@ GiftcardConfig = {
 	},
 
 	[10151] = {
-		desc = "20150415拍拍投媒体礼包",
+		desc = "20150415拍拍富媒体礼包",
 		reward = "90914",
 		type = "gshx_activation",
 		tags = "2015_4_15_other c[20150415_other]",
@@ -1367,7 +1367,7 @@ GiftcardConfig = {
 	},
 	
 	[10152] = {
-		desc = "20150605拍拍投毕业狂欢礼包",
+		desc = "20150605拍拍富毕业狂欢礼包",
 		reward = "514632",
 		type = "gshx_activation",
 		tags = "2015_4_15_other c[20150605_happy]",
@@ -1377,7 +1377,7 @@ GiftcardConfig = {
 	},
 	
 	[10153] = {
-		desc = "20150605拍拍投激活码礼包",
+		desc = "20150605拍拍富激活码礼包",
 		reward = "514633",
 		type = "gshx_activation",
 		tags = "2015_6_5_JiHuoMa c[20150605_CDKey]",
@@ -1387,7 +1387,7 @@ GiftcardConfig = {
 	},
 	
 	[10154] = {
-		desc = "20150605拍拍投抽奖侠义石",
+		desc = "20150605拍拍富抽奖侠义石",
 		reward = "514634",
 		type = "gshx_activation",
 		tags = "2015_6_5_XiaYiShi c[20150605_XiaYiShi]",
@@ -1397,7 +1397,7 @@ GiftcardConfig = {
 	},
 	
 	[10155] = {
-		desc = "20150605拍拍投抽奖洗髓丹",
+		desc = "20150605拍拍富抽奖洗髓丹",
 		reward = "514635",
 		type = "gshx_activation",
 		tags = "2015_6_5_XiSuiDan c[20150605_other]",
@@ -1407,7 +1407,7 @@ GiftcardConfig = {
 	},
 	
 	[10156] = {
-		desc = "20150605拍拍投龙纹手环",
+		desc = "20150605拍拍富龙纹手环",
 		reward = "514636",
 		type = "gshx_activation",
 		tags = "2015_6_5_LongWenShouHuan c[20150605_other]",
@@ -1417,7 +1417,7 @@ GiftcardConfig = {
 	},
 	
 	[10157] = {
-		desc = "20150605拍拍投内丹",
+		desc = "20150605拍拍富内丹",
 		reward = "514637",
 		type = "gshx_activation",
 		tags = "2015_6_5_NeiDan c[20150605_other]",
@@ -1427,7 +1427,7 @@ GiftcardConfig = {
 	},
 	
 	[10158] = {
-		desc = "20150605拍拍投优质牧草",
+		desc = "20150605拍拍富优质牧草",
 		reward = "514638",
 		type = "gshx_activation",
 		tags = "2015_6_5_YouZhiMuCao c[20150605_other]",
@@ -1437,7 +1437,7 @@ GiftcardConfig = {
 	},
 	
 	[10159] = {
-		desc = "20150605拍拍投激活码礼包2号",
+		desc = "20150605拍拍富激活码礼包2号",
 		reward = "514633",
 		type = "gshx_activation",
 		tags = "2015_6_5_JiHuoMa c[20150605_CDKey]",
@@ -1447,7 +1447,7 @@ GiftcardConfig = {
 	},
 	
 	[10160] = {
-		desc = "20150710拍拍投随机礼包",
+		desc = "20150710拍拍富随机礼包",
 		reward = "514643",
 		type = "gshx_activation",
 		tags = "2015_7_10_JiHuoMa c[common]",
@@ -1457,7 +1457,7 @@ GiftcardConfig = {
 	},	
 	
 	[10161] = {
-		desc = "20150730拍拍投抢注礼包",
+		desc = "20150730拍拍富抢注礼包",
 		reward = "514645",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017585_CDKey]",
@@ -1467,7 +1467,7 @@ GiftcardConfig = {
 	},	
 		
 	[10162] = {
-		desc = "20150730拍拍投叶子猪礼包",
+		desc = "20150730拍拍富叶子猪礼包",
 		reward = "514647",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -1477,7 +1477,7 @@ GiftcardConfig = {
 	},	
 		
 	[10163] = {
-		desc = "20150730拍拍投17173礼包",
+		desc = "20150730拍拍富17173礼包",
 		reward = "514649",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -1487,7 +1487,7 @@ GiftcardConfig = {
 	},	
 		
 	[10164] = {
-		desc = "20150730拍拍投YY礼包",
+		desc = "20150730拍拍富YY礼包",
 		reward = "514651",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[20150730_CDKey]",
@@ -1497,7 +1497,7 @@ GiftcardConfig = {
 	},	
 		
 	[10165] = {
-		desc = "20150730拍拍投新手卡礼包",
+		desc = "20150730拍拍富新手卡礼包",
 		reward = "514653",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017589_CDKey]",
@@ -1507,7 +1507,7 @@ GiftcardConfig = {
 	},	
 		
 	[10166] = {
-		desc = "20150730拍拍投精英回馈礼包",
+		desc = "20150730拍拍富精英回馈礼包",
 		reward = "514655",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017590_CDKey]",
@@ -1517,7 +1517,7 @@ GiftcardConfig = {
 	},	
 		
 	[10167] = {
-		desc = "20150730拍拍投新手见面礼包",
+		desc = "20150730拍拍富新手见面礼包",
 		reward = "514657",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017591_CDKey]",
@@ -1527,7 +1527,7 @@ GiftcardConfig = {
 	},	
 		
 	[10168] = {
-		desc = "20150730拍拍投特权礼包",
+		desc = "20150730拍拍富特权礼包",
 		reward = "514659",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017592_CDKey]",
@@ -1537,7 +1537,7 @@ GiftcardConfig = {
 	},	
 		
 	[10169] = {
-		desc = "20150730拍拍投内测回馈礼包",
+		desc = "20150730拍拍富内测回馈礼包",
 		reward = "514661",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017593_CDKey]",
@@ -1546,7 +1546,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},	
 	[10170] = {
-		desc = "20150730拍拍投豪气冲天礼包",
+		desc = "20150730拍拍富豪气冲天礼包",
 		reward = "514665",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015073017600_CDKey]",
@@ -1555,7 +1555,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},	
 	[10171] = {
-		desc = "20150806拍拍投内丹",
+		desc = "20150806拍拍富内丹",
 		reward = "515015",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015080610171_CDKey]",
@@ -1564,7 +1564,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 	[10172] = {
-		desc = "20150806拍拍投回春汤",
+		desc = "20150806拍拍富回春汤",
 		reward = "515016",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015080610172_CDKey]",
@@ -1573,7 +1573,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 	[10173] = {
-		desc = "20150806拍拍投龙纹手环",
+		desc = "20150806拍拍富龙纹手环",
 		reward = "515017",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015080610173_CDKey]",
@@ -1582,7 +1582,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 	[10174] = {
-		desc = "20150806拍拍投侠义石",
+		desc = "20150806拍拍富侠义石",
 		reward = "515018",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015080610174_CDKey]",
@@ -1591,7 +1591,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 	[10175] = {
-		desc = "20150806拍拍投如意卷",
+		desc = "20150806拍拍富如意卷",
 		reward = "515019",
 		type = "gshx_activation",
 		tags = "2015_7_30_JiHuoMa c[2015080610175_CDKey]",
@@ -1600,7 +1600,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10176] = {
-		desc = "20150909拍拍投市场聂隐娘",
+		desc = "20150909拍拍富市场聂隐娘",
 		reward = "515021",
 		type = "gshx_activation",
 		tags = "2015_9_18_JiHuoMa c[2015090910176_CDKey]",
@@ -1609,7 +1609,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10177] = {
-		desc = "20150909拍拍投官方礼包",
+		desc = "20150909拍拍富官方礼包",
 		reward = "514628",
 		type = "gshx_activation",
 		tags = "2015_9_18_JiHuoMa c[2015090910177_CDKey]",
@@ -1618,7 +1618,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10178] = {
-		desc = "20150909拍拍投内渠聂隐娘",
+		desc = "20150909拍拍富内渠聂隐娘",
 		reward = "515021",
 		type = "gshx_activation",
 		tags = "2015_9_18_JiHuoMa c[2015090910176_CDKey]",
@@ -1627,7 +1627,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10179] = {
-		desc = "20150918拍拍投QB宝箱",
+		desc = "20150918拍拍富QB宝箱",
 		reward = "515022",
 		type = "gshx_activation",
 		tags = "2015_9_18_Qb c[2015091810179_CDKey]",
@@ -1646,7 +1646,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10181] = {
-		desc = "20150918拍拍投公会礼包",
+		desc = "20150918拍拍富公会礼包",
 		reward = "514667",
 		type = "GH",
 		tags = "2015_9_18_gonghui c[2015091810181_CDKey]",
@@ -1657,7 +1657,7 @@ GiftcardConfig = {
 		task = 1
 	},
 		[10182] = {
-		desc = "20150918拍拍投QQ礼包",
+		desc = "20150918拍拍富QQ礼包",
 		reward = "514669",
 		type = "gshx_activation",
 		tags = "2015_10_22_QQJiHuoMa c[2015102210182_CDKey]",
@@ -1666,7 +1666,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 		[10183] = {
-		desc = "20151010拍拍投随机测试礼包",
+		desc = "20151010拍拍富随机测试礼包",
 		reward = "514673",
 		type = "gshx_activation",
 		tags = "2015_1015kaifu_173MeiRi",
@@ -1873,7 +1873,7 @@ GiftcardConfig = {
 		server = {6010,1160},
 	},
 		[10204] = {
-		desc = "20151218拍拍投QB宝箱",
+		desc = "20151218拍拍富QB宝箱",
 		reward = "515022",
 		type = "gshx_activation",
 		tags = "2015_12_18_Qb c[2015121810204_CDKey]",
@@ -1883,7 +1883,7 @@ GiftcardConfig = {
 		server = {6010,1160},
 	},
 		[10205] = {
-		desc = "20151010拍拍投随机测试礼包",
+		desc = "20151010拍拍富随机测试礼包",
 		reward = "514673",
 		type = "gshx_activation",
 		tags = "2015_1015kaifu_173MeiRi",
@@ -1962,7 +1962,7 @@ GiftcardConfig = {
 		server = {6010,1170},
 	},
 		[10213] = {
-		desc = "20160112拍拍投QB宝箱",
+		desc = "20160112拍拍富QB宝箱",
 		reward = "515022",
 		type = "gshx_activation",
 		tags = "2016_1_12_Qb c[2015121810213_CDKey]",
@@ -2062,7 +2062,7 @@ GiftcardConfig = {
 		server = {6010,1180},
 	},
 	[10223] = {
-		desc = "20160311多玩拍拍投飞升每日礼包",
+		desc = "20160311多玩拍拍富飞升每日礼包",
 		reward = "90952",
 		type = "gshx_activation",
 		tags = "2016_3_11_YYmeiri ",
@@ -2401,7 +2401,7 @@ GiftcardConfig = {
 		game_type = 28,
 	},
 	[10258] = {
-		desc = "20161022拍拍投官方礼包",
+		desc = "20161022拍拍富官方礼包",
 		reward = "91020",
 		type = "gshx_activation",
 		tags = "2016_10_22_LB c[20160820110258_CDKey]",
