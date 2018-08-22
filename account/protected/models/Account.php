@@ -7,10 +7,10 @@
  * @property integer $id
  * @property string $account
  * @property string $password
- * @property string $idcard
- * @property string $email
+ //* @property string $idcard
+ //* @property string $email
  //* @property integer $verified
- * @property string $name
+ //* @property string $name
  * @property string $time
  */
 class Account extends CActiveRecord
@@ -61,8 +61,8 @@ class Account extends CActiveRecord
 			array('oldpassword', 'required', 'on'=>array('password')),
 			array('oldpassword', 'authenticate', 'on'=>array('password')),
 			//array('account, password, email, name', 'length', 'max'=>50, 'on'=>'create'),
-			array('account, password, name', 'length', 'max'=>50, 'on'=>array('create','quickreg')),
-			array('account, password, name', 'length', 'max'=>50, 'on'=>array('create','quickreg')),
+			array('account, password', 'length', 'max'=>50, 'on'=>array('create','quickreg')),
+			array('account, password', 'length', 'max'=>50, 'on'=>array('create','quickreg')),
 			//array('name', 'length', 'max'=>50, 'on'=>'update'),
 			array('confirm', 'compare', 'compareAttribute'=>'password', 'on'=>array('create','quickreg','password','reset')),
 			array('account', 'unique', 'className'=>'Account', 'on'=>array('create','quickreg')),
