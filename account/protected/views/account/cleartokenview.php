@@ -19,11 +19,11 @@ $this->initMenu();
 <?php
 	$menu = array();
 
-	if (Yii::app()->user->name !== 'Guest') {
+	//if (Yii::app()->user->name !== 'Guest') {
 
-		array_push($menu, array('label'=>'通过手机清除', 'url'=>array('account/cleartokenmobile')));
+	array_push($menu, array('label'=>'通过手机清除', 'url'=>array('account/cleartokenmobile')));
 		//array_push($menu, array('label'=>'通过邮箱清除', 'url'=>array('account/sendcleartokenmail')));
-	}
+	//}
 	$this->beginWidget('zii.widgets.CPortlet', array(
 	));
 	$this->widget('zii.widgets.CMenu', array(
