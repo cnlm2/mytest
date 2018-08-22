@@ -33,7 +33,7 @@ $this->widget('zii.widgets.CDetailView', array(
 		//'id',
 		'account',
 		//'password',
-		'email',
+		//'email',
 		'balance',
 		'time',
 	),
