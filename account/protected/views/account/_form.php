@@ -26,9 +26,6 @@ jQuery('input[type="submit"]').addClass('inputSubmit');
 
 <h1>注册用户</h1>
 	<p class="note">带<span class="required">*</span>号的是必填项。</p>
-<?php if ($model->verified == 0 && !$model->isNewrecord) { ?>
-	<p class="note" style="color:red">您还没有验证安全邮箱，在补全资料前请先验证您的邮箱：</p>
-<?php } ?>
 	<?php echo $form->errorSummary($model); ?>
 
 &nbsp;
@@ -128,11 +125,7 @@ jQuery('input[type="submit"]').addClass('inputSubmit');
 			));
 			
 		} else {
-			if ($model->verified == 0) {
-				echo CHtml::submitButton('验证');
-			} else {
-				echo CHtml::submitButton('保存');
-			}
+			echo CHtml::submitButton('保存');
 		}
 		?>
 	</div>
