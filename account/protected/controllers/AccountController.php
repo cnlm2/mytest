@@ -191,11 +191,11 @@ class AccountController extends Controller
 			Yii::import('application.vendors.*');
 			require_once('ucenter.php');
 
-			$_POST['Account']['email'] = strtolower($_POST['Account']['email']);
+			//$_POST['Account']['email'] = strtolower($_POST['Account']['email']);
 
 			$origin_account = $_POST['Account']['account'];
 			$model->originpassword = $_POST['Account']['password'];
-			$origin_email = $_POST['Account']['email'];
+			//$origin_email = $_POST['Account']['email'];
 
 			$salt = $model->generateSalt();
 			$_POST['Account']['password'] =
@@ -214,7 +214,7 @@ class AccountController extends Controller
 
 			if($model->save()) {
 				//$this->redirect(array('view','id'=>$model->id));
-				uc_user_register($origin_account, $model->originpassword, $origin_email);
+				//uc_user_register($origin_account, $model->originpassword, $origin_email);
 				//if (isset($_GET['from'])) {   // 来源跟踪
 				//	$activation = new Activation();
 				//	$activation->account_id = $model->id;
@@ -225,7 +225,7 @@ class AccountController extends Controller
 				//if ($model->verified==0 && $this->sendVerifyMail($model)) {
 				//	Yii::app()->user->setState('info', "恭喜！你已经成功注册，现在可以登录了。同时验证邮件已发送至安全邮箱，请尽快登录邮箱验证。");
 				//} else {
-					Yii::app()->user->setState('info', "恭喜！你已经成功注册，现在可以登录了：");
+				Yii::app()->user->setState('info', "恭喜！你已经成功注册，现在可以登录了：");
 				//}
 				//stat_log("REGISTER");
 				$this->redirect(array('site/login'));
