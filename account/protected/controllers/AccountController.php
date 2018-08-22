@@ -389,9 +389,9 @@ class AccountController extends Controller
 		}
 		//$model->password="";
 		//$model->confirm="";
-		$this->render('password',array(
-			'model'=>$model,
-		));
+		//$this->render('password',array(
+		//	'model'=>$model,
+		//));
 	}
 
 	public function actionReset($id)
