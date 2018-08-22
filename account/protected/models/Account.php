@@ -21,6 +21,7 @@ class Account extends CActiveRecord
 	public $isagree;
 	//public $nickname;
 	public $verifyCode;
+	public $name;
 
 	private $_oldAttributes;
 	/**
