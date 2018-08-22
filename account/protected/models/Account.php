@@ -68,7 +68,7 @@ class Account extends CActiveRecord
 			array('account', 'unique', 'className'=>'Account', 'on'=>array('create','quickreg')),
 			//array('idcard', 'ext.validators.idCard', 'on'=>array('create','quickreg','update','antiaddiction')),
 			//array('idcard, name', 'required', 'on'=>array('antiaddiction')),
-			array('account', 'checkname', 'on'=>array('create','quickreg')),
+			//array('account', 'checkname', 'on'=>array('create','quickreg')),
 			array('account', 'match', 'pattern'=>'/^[a-zA-Z]([a-zA-Z0-9])+$/', 'on'=>array('create','quickreg')),
 			//array('email', 'checkemail', 'on'=>array('create')),
 			//array('email', 'updatecheckemail', 'on'=>array('update')),

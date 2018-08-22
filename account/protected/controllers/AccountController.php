@@ -203,14 +203,6 @@ class AccountController extends Controller
 			$_POST['Account']['confirm'] =
 				$model::crypt(md5($_POST['Account']['confirm']), $salt);
 			$model->attributes=$_POST['Account'];
-			if (isset($_GET['from'])) {
-				$model->from = $_GET['from'];
-			}
-			else{
-				if (isset($_COOKIE['from'])) {
-					$model->from = $_COOKIE['from'];
-				}
-			}
 
 			if($model->save()) {
 				//$this->redirect(array('view','id'=>$model->id));
