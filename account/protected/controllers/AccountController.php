@@ -387,8 +387,8 @@ class AccountController extends Controller
 				$this->redirect(array('view','id'=>$model->id));
 			}
 		}
-		$model->password="";
-		$model->confirm="";
+		//$model->password="";
+		//$model->confirm="";
 		$this->render('password',array(
 			'model'=>$model,
 		));
