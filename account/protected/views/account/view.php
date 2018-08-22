@@ -35,11 +35,6 @@ $this->widget('zii.widgets.CDetailView', array(
 		//'password',
 		'email',
 		array(
-			'label'=>$model->getAttributeLabel('verifiedmobile'),
-			'type'=>'shadow',
-			'value'=>$model->verifiedmobile,
-		),
-		array(
 			'label'=>$model->getAttributeLabel('idcard'),
 			'type'=>'shadow',
 			'value'=>$model->idcard,
