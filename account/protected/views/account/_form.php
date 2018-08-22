@@ -75,123 +75,6 @@ jQuery('input[type="submit"]').addClass('inputSubmit');
 		</td>
 	</tr>
 	
-	<?php if(isset($_GET['activationcode'])) {  ?>	
-		<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'from'); ?></td>
-		<td class="finput"><div>
-		<?php echo $form->textField($model,'from',array('size'=>50,'maxlength'=>50)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'from'); ?>
-		</td>
-	</tr>
-	
-	<?php } ?>
-
-	<?php } ?>
-
-
-	<?php
-	$oldemail = $model->getOldEmail();
-	if ($oldemail == Null || $oldemail == "" || $model->verified == 0) {
-	?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'email'); ?></td>
-		<td class="finput"><div>
-		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>50)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'email'); ?>
-			请填写安全邮箱，用于密码找回。一旦填写并验证后将不可以修改。
-		</td>
-	</tr>
-	<?php } else { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'email'); ?></td>
-		<td class="finput"><div>
-		<?php echo CHtml::encode($model->email); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'email'); ?>
-		</td>
-	</tr>
-	<?php } ?>
-
-<?php
-if ($model->verified == 1 || $model->isNewRecord) {
-?>
-	<?php $oldidcard = $model->getOldIdCard();
-	if ($oldidcard == Null || $oldidcard == "") { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'idcard'); ?></td>
-		<td class="finput"><div>
-		<?php echo $form->textField($model,'idcard',array('size'=>30,'maxlength'=>30)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'idcard'); ?>
-			身份证号是账号安全的重要凭据，一旦填写将不可以修改，请真实填写。
-		</td>
-	</tr>
-	<?php } else { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'idcard'); ?></td>
-		<td class="finput"><div>
-		<?php echo CHtml::encode($formatter->formatShadow($model->idcard)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'idcard'); ?>
-		</td>
-	</tr>
-	<?php } ?>
-
-	<?php $oldname = $model->getOldName();
-	if ($oldname == Null || $oldname == "") { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'name'); ?></td>
-		<td class="finput"><div>
-		<?php echo $form->textField($model,'name',array('size'=>50,'maxlength'=>50)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'name'); ?>
-			姓名是账号安全的重要凭据，一旦填写将不可以修改，请真实填写。
-		</td>
-	</tr>
-	<?php } else { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'name'); ?></td>
-		<td class="finput"><div>
-		<?php echo CHtml::encode($formatter->formatShadow($model->name)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'name'); ?>
-		</td>
-	</tr>
-	<?php } ?>
-
-	<?php $oldmobile = $model->getOldMobile();
-	if ($oldmobile == Null || $oldmobile == "") { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'mobile'); ?></td>
-		<td class="finput"><div>
-		<?php echo $form->textField($model,'mobile',array('size'=>15,'maxlength'=>15)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'mobile'); ?>
-			手机号码是账号安全的重要凭据，一旦填写将不可以修改，请真实填写。
-		</td>
-	</tr>
-	<?php } else { ?>
-	<tr class="row">
-		<td class="flabel"><?php echo $form->labelEx($model,'mobile'); ?></td>
-		<td class="finput"><div>
-		<?php echo CHtml::encode($formatter->formatShadow($model->mobile)); ?>
-		</div></td>
-		<td class="fnote">
-			<?php echo $form->error($model,'mobile'); ?>
-		</td>
-	</tr>
-	<?php } ?>
-	
 	<tr class="row">
 		<td class="flabel"><?php echo $form->label($model,'verifyCode'); ?></td>
 		<td class="finput"><div>
@@ -244,10 +127,6 @@ if ($model->verified == 1 || $model->isNewRecord) {
 				'onclick'=>"_hmt.push(['_trackEvent','register','normal','']);"
 			));
 			
-			if (isset($_GET['activationcode'])) {
-				echo "<a class='btn-gw' href='http://rjdown.dxqzol.com/gshxm_200-2016-08-20.exe' target='_blank'>下载游戏</a>";
-				echo "<a class='btn-gw' href='http://gshx.greenyouxi.com/' target='_blank'>进入官网</a>";
-			}
 		} else {
 			if ($model->verified == 0) {
 				echo CHtml::submitButton('验证');
