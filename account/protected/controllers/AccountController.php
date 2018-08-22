@@ -376,11 +376,11 @@ class AccountController extends Controller
 			$model->attributes=$_POST['Account'];
 
 			if($model->save()) {
-				Yii::import('application.vendors.*');
-				require_once('ucenter.php');
-				$uc_user = uc_get_user($model->account);
-				if ($uc_user) {
-					uc_user_edit($model->account, "", $model->originpassword, "", 1);
+				//Yii::import('application.vendors.*');
+				//require_once('ucenter.php');
+				//$uc_user = uc_get_user($model->account);
+				//if ($uc_user) {
+				//	uc_user_edit($model->account, "", $model->originpassword, "", 1);
 				//} else {
 				//	uc_user_register($model->account, $model->originpassword, $model->email);
 				}
@@ -423,10 +423,10 @@ class AccountController extends Controller
 			$model->attributes=$_POST['Account'];
 
 			if($model->save()) {
-				Yii::import('application.vendors.*');
-				require_once('ucenter.php');
-				uc_user_edit($model->account, "", $model->originpassword, "", 1);
-				$reset->delete();
+			//	Yii::import('application.vendors.*');
+			//	require_once('ucenter.php');
+			//	uc_user_edit($model->account, "", $model->originpassword, "", 1);
+			//	$reset->delete();
 				Yii::app()->user->setState('info', "你已经成功重置密码，现可以使用新密码登录了：");
 				$this->redirect(array('site/login'));
 			}
