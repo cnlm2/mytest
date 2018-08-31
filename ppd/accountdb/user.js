@@ -8,23 +8,24 @@ async function FindUser(account)
     let sql = "select * from accounts where name=? ";
     let rows;
     let fields;
-    [rows,fields] = await accountdb.pool.query(sql, [account])
+    [rows,fields] = await accountdb.pool.query(sql, [account]);
     if ( rows.length > 0 ) {
-        return fields;
+        return rows[0];
     }
+    return false;
 }
 
 async function AddUser(account, pw)
 {
     console.log("AddUser",account,pw);
-    if (FindUser(account)) {
+    if (await FindUser(account)) {
         return false;
     }
     let sql = "insert into accounts values(?,?,'lianpeng')";
     let rows;
     let fields;
-    [rows,fields] = await accountdb.pool.query(sql, [account,pw])
-    return rows.length > 0;  
+    [rows,fields] = await accountdb.pool.query(sql, [account,pw]);
+    return rows.affectedRows > 0;  
 }
 
 async function AuthUser(account,pw)
