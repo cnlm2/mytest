@@ -1,3 +1,0 @@
-lua gen.lua
-
-pause
