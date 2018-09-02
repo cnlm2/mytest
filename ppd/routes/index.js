@@ -7,9 +7,9 @@ router.get('/', function(req, res) {
     if(req.cookies.islogin){
         req.session.islogin=req.cookies.islogin;
     }
-if(req.session.islogin){
-    res.locals.islogin=req.session.islogin;
-}
+    if(req.session.islogin){
+        res.locals.islogin=req.session.islogin;
+    } 
   res.render('index', { title: 'HOME',test:res.locals.islogin});
 });
 
@@ -27,13 +27,15 @@ router.route('/login')
     })
     .post(async function(req, res) {
         let ret = await usr.AuthUser(req.body.username, req.body.password);
+        console("login");
         if (ret) {
             req.session.islogin=req.body.username;
             res.locals.islogin=req.session.islogin;
             res.cookie('islogin',res.locals.islogin,{maxAge:60000});
-            res.redirect('/home');
+            res.send(200);
         } else {
-            res.send('用户名或密码错误！');
+            req.session.error = "密码错误";
+            res.send(404);
         }
     });
 
