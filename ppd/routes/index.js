@@ -57,12 +57,12 @@ router.get('/home', function(req, res) {
     if(req.cookies.islogin){
         req.session.islogin=req.cookies.islogin;
     }
-    res.render('home', { title: 'Home', user: res.locals.islogin });
+    res.render('home', { title: '主页', user: res.locals.islogin });
 });
 
 router.route('/reg')
     .get(function(req,res){
-        res.render('reg',{title:'注册'});
+        res.render('reg',{title:'用户注册'});
     })
     .post(async function(req,res) {
         let ret = await usr.AddUser(req.body.username ,req.body.password);
