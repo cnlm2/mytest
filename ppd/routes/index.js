@@ -9,8 +9,13 @@ router.get('/', function(req, res) {
     }
     if(req.session.islogin){
         res.locals.islogin=req.session.islogin;
-    } 
-  res.render('index', { title: 'HOME',test:res.locals.islogin});
+    }
+    if (res.locals.islogin) {
+        res.redirect("/home");
+    } else {
+        res.redirect("/login")
+    }
+    //res.render('index', { title: 'HOME',test:res.locals.islogin});
 });
 
 
@@ -27,7 +32,7 @@ router.route('/login')
     })
     .post(async function(req, res) {
         let ret = await usr.AuthUser(req.body.username, req.body.password);
-        console("login");
+        console.log("login");
         if (ret) {
             req.session.islogin=req.body.username;
             res.locals.islogin=req.session.islogin;
@@ -60,16 +65,16 @@ router.route('/reg')
         res.render('reg',{title:'注册'});
     })
     .post(async function(req,res) {
-        let ret = await usr.AddUser(req.body.username ,req.body.password2);
+        let ret = await usr.AddUser(req.body.username ,req.body.password);
         if (ret) {
             req.session.islogin=req.body.username;
             res.locals.islogin=req.session.islogin;
             res.cookie('islogin',res.locals.islogin,{maxAge:60000});
-            res.redirect('/home');
+            res.send(200);
             
         } else {
-            res.render('reg',{title:'注册'});
-            res.send("<script> alert('注册失败') </script>");
+            req.session.error = "密码错误";
+            res.send(404);
         }
     });
 

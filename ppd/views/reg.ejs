@@ -58,6 +58,7 @@
                 if(password !== password1){ 
                     $("#password").css("border","1px solid red");
                     $("#password1").css("border","1px solid red");
+                    alert("两次密码输入不同");
                 }else if(password === password1){
                 var data = {"username":username,"upwd":password};
                 $.ajax({ 
@@ -66,11 +67,12 @@
                     data: data,
                     success: function(data,status){ 
                         if(status == 'success'){ 
-                            location.href = 'login';
+                            location.href = '/';
                         }
                     },
                     error: function(data,err){ 
                             location.href = 'reg';
+                            alert("用户名已经存在");
                     }
                 }); 
             }
