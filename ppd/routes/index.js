@@ -57,6 +57,7 @@ router.get('/home', function(req, res) {
     if(req.cookies.islogin){
         req.session.islogin=req.cookies.islogin;
     }
+    console.log(res.locals.islogin);
     res.render('home', { title: '主页', user: res.locals.islogin });
 });
 
