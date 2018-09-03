@@ -55,6 +55,9 @@
                 var username = $("#username").val();
                 var password = $("#password").val();
                 var password1 = $("#password1").val();
+                if ( username == "" || password == "" || password1 == "") {
+                    return;
+                }
                 if(password !== password1){ 
                     $("#password").css("border","1px solid red");
                     $("#password1").css("border","1px solid red");

@@ -47,6 +47,9 @@
 		$("#login0").click(function(){ 
 			var username = $("#username").val();
 			var password = $("#password").val();
+			if (username == "" || password == "") {
+				return;
+			}
 			var data = {"username":username,"password":password};
 			$.ajax({ 
 				url:'/login',
