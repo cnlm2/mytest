@@ -371,3 +371,18 @@ gallery.html css
   width: 200px;
   margin: 0 auto;
 }
+
+.main-head {
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.agin {
+  padding: 8px 19px;
+  float: right;
+  border-radius: 3px;
+  background: #5296e7;
+  color: #FFFFFF;
+  border: 0;
+}
