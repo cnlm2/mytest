@@ -5,12 +5,12 @@
     </div>
 -->
     <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-    <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br/>今日投标次数<br/>2300</a></li>
-    <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-briefcase"></span><br/>今日投标金额<br/>308</a></li>
-    <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日投标次数<br/>80082</a></li>
-    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>昨日投标金额<br/>3000</a></li>
-    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>总投标金额<br/>3000</a></li>
-    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>投标费用余额<br/>3000</a></li>
+    <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br/>今日投标次数<br/><%= bid_today.times%></a></li>
+    <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-briefcase"></span><br/>今日投标金额<br/><%= bid_today.amount%></a></li>
+    <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日投标次数<br/><%= bid_yestoday.times%></a></li>
+    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>昨日投标金额<br/><%= bid_yestoday.amount%></a></li>
+    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>总投标金额<br/><%= bid_total.amount%></a></li>
+    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>投标费用余额<br/><%= user.balance%></a></li>
     </ul>
     <div class="am-g">
     <div class="am-cf am-padding am-margin main-head">授权账号<button onclick="window.location.href='#module=account/query'" class="button agin">添加拍拍贷账号</button></div>

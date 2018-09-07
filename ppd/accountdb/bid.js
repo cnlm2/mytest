@@ -5,7 +5,7 @@ let accountdb = require("./accountdb");
 async function getBidTotal(account) 
 {
     console.log("FindUser",account);
-    let sql = "select sum(bid_amount) from bid where account=? ";
+    let sql = "select COALESCE(sum(bid_amount),0) as amount from bid where account=? ";
     let rows;
     let fields;
     [rows,fields] = await accountdb.pool.query(sql, [account]);
@@ -17,7 +17,7 @@ async function getBidTotal(account)
 async function getBidToday(account) 
 {
     console.log("FindUser",account);
-    let sql = "select sum(bid_amount), count(DISTINCT id) from bid where account=? and to_days(time)=to_days(now()) ";
+    let sql = "select COALESCE(sum(bid_amount),0) as amount, count(DISTINCT id) as times from bid where account=? and to_days(time)=to_days(now()) ";
     let rows;
     let fields;
     [rows,fields] = await accountdb.pool.query(sql, [account]);
@@ -30,7 +30,7 @@ async function getBidToday(account)
 async function getBidYestoday(account) 
 {
     console.log("FindUser",account);
-    let sql = "select sum(bid_amount), count(DISTINCT id) from bid where account=? and to_days(time)=to_days(now())-1 ";
+    let sql = "select COALESCE(sum(bid_amount),0) as amount, count(DISTINCT id) as times from bid where account=? and to_days(time)=to_days(now())-1 ";
     let rows;
     let fields;
     [rows,fields] = await accountdb.pool.query(sql, [account]);
@@ -42,5 +42,5 @@ async function getBidYestoday(account)
 
 
 exports.getBidTotal = getBidTotal;
-exports.AddUser  = getBidToday;
-exports.AuthUser = getBidYestoday;
+exports.getBidToday  = getBidToday;
+exports.getBidYestoday = getBidYestoday;
