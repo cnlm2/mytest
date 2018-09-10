@@ -98,5 +98,13 @@ router.route('/reg')
         }
     });
 
+router.route('/auth')
+    .get(function(req,res){
+
+    })
+    .post(function() {
+        
+    });
+
 module.exports = router;
 
