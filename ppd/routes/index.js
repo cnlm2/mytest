@@ -3,7 +3,9 @@ var router = express.Router();
 var usr=require('../accountdb/user');
 var auth=require('../accountdb/auth');
 var bid=require('../accountdb/bid');
+var ppd=require("../accountdb/ppd")
 var url=require("url");
+
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -102,7 +104,9 @@ router.route('/reg')
 router.route('/auth')
     .get(function(req,res){
         let params = url.parse(req.url,true).query;
-        res.send(params.code);
+        ppd.authorize(params.code,function(){
+            auth.AddUser()
+        });
     })
     .post(function() {
         
