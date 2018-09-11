@@ -100,7 +100,7 @@ router.route('/reg')
 
 router.route('/auth')
     .get(function(req,res){
-
+        res.send("hello world!");
     })
     .post(function() {
         
