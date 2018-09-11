@@ -3,6 +3,7 @@ var router = express.Router();
 var usr=require('../accountdb/user');
 var auth=require('../accountdb/auth');
 var bid=require('../accountdb/bid');
+var url=require("url");
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -100,7 +101,8 @@ router.route('/reg')
 
 router.route('/auth')
     .get(function(req,res){
-        res.send("hello world!");
+        let params = url.parse(req.url,true).query;
+        res.send(params.code);
     })
     .post(function() {
         
