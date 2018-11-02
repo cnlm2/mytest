@@ -8,16 +8,19 @@ import datetime
 import os
 import base64
 
-appid="XXXXXXXXXXXXXXXXXXXXXXX"
+appid="799985c92ad74b2d84ced92748645a25"
 
-code = "xx"
+code = "7c62df7dc8fe4ddb9826243273fb1724"
 
 #step 1 授权
 #authorizeStr = client.authorize(appid=appid,code=code) #获得授权
 #authorizeObj = json.loads(authorizeStr) # 将返回的authorize对象反序列化成对象，成功得到 OpenID、AccessToken、RefreshToken、ExpiresIn
+#print authorizeObj
 #{"OpenID":"xx","AccessToken":"xxx","RefreshToken":"xxx","ExpiresIn":604800}
 
-access_token = "XXXXXXXXXXXXXXXXXXXXXXX"
+#access_token = authorizeObj["AccessToken"]
+#print("access_token============>",access_token)
+access_token = "7cdd84675943f0aaeaa76576fe093f57d0000c8021fe61e754eb62f905bb203e27b6dc41544ec789b7b3adbbd97df47b336924d6761273bd077cc341"
 
 #step 1 刷新令牌
 #openid="xx"
@@ -37,6 +40,7 @@ data = {}
 sort_data = rsa.sort(data)
 sign = rsa.sign(sort_data)
 list_result = client.send(access_url,json.dumps(data) , appid, sign, access_token)
+print list_result
 
 #加密/解密
 # encrypt_data = "ta5346sw34rfe"

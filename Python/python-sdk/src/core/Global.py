@@ -16,12 +16,20 @@ AND
 备注：Python只支持pkcs1密钥，不支持pkcs8
 '''
 
-privatekey='''
------BEGIN RSA PRIVATE KEY-----
------END RSA PRIVATE KEY-----
-'''
+#privatekey='''
+#-----BEGIN RSA PRIVATE KEY-----
+#-----END RSA PRIVATE KEY-----
+#'''
 
-publickey='''
------BEGIN PUBLIC KEY-----
------END PUBLIC KEY-----
-'''
+with open('private.pem','r') as f:
+    privatekey = f.read().encode()
+print privatekey
+print "==================="
+
+with open('public.pem','r') as f:
+    publickey = f.read().encode()
+    
+#publickey='''
+#-----BEGIN PUBLIC KEY-----
+#-----END PUBLIC KEY-----
+#'''
