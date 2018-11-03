@@ -78,9 +78,10 @@ class openapi_client:
         if accesstoken.strip():
             headers["X-PPD-ACCESSTOKEN"] = accesstoken
         result = http_client.http_post(url,data,headers=headers)
-        # json.loads(result)
-        print("send_data:\n%s" % (result))
-        return result
+        #print("send_data:\n%s" % (result))
+        return json.loads(result)
+        #print("send_data:\n%s" % (result))
+        #return result
         
         
         

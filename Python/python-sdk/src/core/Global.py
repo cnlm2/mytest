@@ -21,10 +21,8 @@ AND
 #-----END RSA PRIVATE KEY-----
 #'''
 
-with open('private.pem','r') as f:
+with open('private2.pem','r') as f:
     privatekey = f.read().encode()
-print privatekey
-print "==================="
 
 with open('public.pem','r') as f:
     publickey = f.read().encode()
